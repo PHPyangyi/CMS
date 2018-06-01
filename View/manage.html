@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css" />
+</head>
+<body id="main">
+
+<div class="map">
+    管理首页 &gt;&gt; 管理员管理
+</div>
+
+<table cellspacing="0">
+    <tr><th>编号</th><th>用户名</th><th>等级</th><th>登录次数</th><th>最近登录ip</th><th>最近登录时间</th></tr>
+    {foreach from=$AllManage key=key item=value}
+    <tr>
+        <td>{counter} </td>
+        <td>{$value->admin_user}</td>
+        <td>{$value->level}</td>
+        <td>{$value->login_count}</td>
+        <td>{$value->last_ip}</td>
+        <td>{$value->last_time}</td>
+    </tr>
+    {/foreach}
+</table>
+
+
+</body>
+</html>

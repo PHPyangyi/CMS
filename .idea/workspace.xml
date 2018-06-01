@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c03729b-4099-43ae-8ae0-2df20dce1f36" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/admin.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/cache.inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/sidebar.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/top.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Conf/profile.inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/Config_File.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/Smarty.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/Smarty_Compiler.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/debug.tpl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.assemble_plugin_filepath.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.assign_smarty_interface.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.create_dir_structure.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.display_debug_console.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.get_include_path.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.get_microtime.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.get_php_resource.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.is_secure.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.is_trusted.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.load_plugins.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.load_resource_plugin.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.process_cached_inserts.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.process_compiled_include.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.read_cache_file.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.rm_auto.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.rmdir.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.run_insert_handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.smarty_include_php.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.write_cache_file.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.write_compiled_include.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.write_compiled_resource.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/internals/core.write_file.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/block.textformat.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/compiler.assign.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.assign_debug_info.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.config_load.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.counter.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.cycle.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.debug.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.eval.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.fetch.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_checkboxes.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_image.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_options.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_radios.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_select_date.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_select_time.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.html_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.mailto.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.math.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.popup.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/function.popup_init.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.capitalize.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.cat.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.count_characters.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.count_paragraphs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.count_sentences.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.count_words.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.date_format.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.debug_print_var.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.default.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.escape.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.indent.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.lower.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.nl2br.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.regex_replace.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.replace.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.spacify.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.string_format.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.strip.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.strip_tags.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.truncate.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.upper.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/modifier.wordwrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/outputfilter.trimwhitespace.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/shared.escape_special_chars.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Smarty/plugins/shared.make_timestamp.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/admin.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/footer.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/header.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/main.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/sidebar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/sidebarn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/View/top.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cache.inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/admin.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/basic.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/cast.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/details.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/feedback.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/friendlink.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/list.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/reg.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/font/elephant.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/00.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/01.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/02.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/03.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/04.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/05.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/06.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/07.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/08.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/09.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/10.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/11.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/12.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/13.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/14.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/15.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/163.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/17.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/18.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/19.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/20.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/21.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/22.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/23.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/24.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/admin_top_bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/adver.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/adver2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/adverleft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/alibaba.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/b1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/b2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/b3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/b4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/baidu.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/damai.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/header1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/header2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/header3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/hot.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/kugou.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/lbg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/lbxml.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/li_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/logosmall.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/nav_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/none.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pic1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pic2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pic3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pic4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pointer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/qqcar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sidebar1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sidebar2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sidebar3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sidebar_right.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/sina.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/top_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/vdimgck.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/yc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/yiche.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/youku.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/init.inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/anchor/anchor.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/attachment.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/attachment.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/attachment.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/alignicon.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/alignicon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/file-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/file-icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/progress.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/success.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/images/success.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/background/background.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/background/background.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/background/background.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/background/images/bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/background/images/success.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/chart.config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/images/charts5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/emotion.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/emotion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/emotion.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/bface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/cface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/fface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/jxface2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/tface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/wface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/emotion/images/yface.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/gmap/gmap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/help/help.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/help/help.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/help/help.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/image.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/image.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/image.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/alignicon.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/progress.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/success.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/image/images/success.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/insertframe/insertframe.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/internal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/link/link.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/map/map.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/map/show.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/music/music.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/music/music.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/music/music.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/preview/preview.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/addimg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/brush.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/delimg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/delimgH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/empty.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/emptyH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/eraser.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/redo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/redoH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/scale.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/scaleH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/size.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/undo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/images/undoH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/scrawl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/scrawl.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/scrawl/scrawl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/searchreplace/searchreplace.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/searchreplace/searchreplace.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/snapscreen/snapscreen.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/spechars/spechars.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/spechars/spechars.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/dragicon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittd.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittip.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/pre0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/pre1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/pre2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/pre3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/images/pre4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/template.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/template.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/template/template.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/center_focus.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/file-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/file-icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/left_focus.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/none_focus.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/progress.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/right_focus.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/success.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/images/success.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/video.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/video.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/video/video.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/webapp/webapp.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/imageUploader.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/tangram.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/wordimage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/wordimage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/addimage.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/alldeletebtnhoverskin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/alldeletebtnupskin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/background.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/button.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/deletedisable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/deleteenable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/listbackground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/localimage.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/music.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/rotateleftdisable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/rotateleftenable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/rotaterightdisable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/rotaterightenable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/en/images/upload.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/zh-cn/images/copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/zh-cn/images/localimage.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/zh-cn/images/music.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/zh-cn/images/upload.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/lang/zh-cn/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/Uploader.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/action_crawler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/action_list.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/action_upload.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/config.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/php/controller.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/dialogbase.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/anchor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/arrow_down.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/arrow_up.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/button-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/cancelbutton.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/charts.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/cursor_h.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/cursor_h.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/cursor_v.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/cursor_v.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/dialog-title-bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/filescan.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/highlighted.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/icons-all.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/loaderror.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/lock.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/neweditor-tab-bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/pagebreak.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/scale.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/sortable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/spacer.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/sparator_v.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/table-cell-align.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/tangram-colorpicker.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/toolbar_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/unhighlighted.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/upload.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/videologo.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/word.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/default/images/wordpaste.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/themes/iframe.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/SyntaxHighlighter/shCore.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/codemirror/codemirror.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/codemirror/codemirror.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-blue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-green.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/gray.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/grid.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/skies.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video.dev.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/Uploader.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/ueditor.all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/ueditor.all.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/ueditor.config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/ueditor.parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ueditor/ueditor.parse.min.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tpl</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="C:/wamp/www/SHOP/public/DB.class.php" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/index.tpl" />
+        <option value="$PROJECT_DIR$/View/index.tpl" />
+        <option value="$PROJECT_DIR$/css/index.html" />
+        <option value="$PROJECT_DIR$/css/basic.css" />
+        <option value="$PROJECT_DIR$/css/cast.css" />
+        <option value="$PROJECT_DIR$/css/details.css" />
+        <option value="$PROJECT_DIR$/css/friendlink.css" />
+        <option value="$PROJECT_DIR$/css/list.css" />
+        <option value="$PROJECT_DIR$/css/reg.css" />
+        <option value="$PROJECT_DIR$/css/feedback.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/View/footer.html" />
+        <option value="$PROJECT_DIR$/View/header.html" />
+        <option value="$PROJECT_DIR$/Smarty.inc.php" />
+        <option value="$PROJECT_DIR$/Admin/index.php" />
+        <option value="$PROJECT_DIR$/cache.inc.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/View/index.html" />
+        <option value="$PROJECT_DIR$/Admin/cache.inc.php" />
+        <option value="$PROJECT_DIR$/Admin/top.php" />
+        <option value="$PROJECT_DIR$/Admin/main.php" />
+        <option value="$PROJECT_DIR$/View/sidebarn.css" />
+        <option value="$PROJECT_DIR$/View/sidebarn.html" />
+        <option value="$PROJECT_DIR$/View/top.html" />
+        <option value="$PROJECT_DIR$/js/admin_top_nav.js" />
+        <option value="$PROJECT_DIR$/Admin/sidebarn.php" />
+        <option value="$PROJECT_DIR$/Admin/sidebar.php" />
+        <option value="$PROJECT_DIR$/View/main.html" />
+        <option value="$PROJECT_DIR$/css/admin.css" />
+        <option value="$PROJECT_DIR$/View/admin.html" />
+        <option value="$PROJECT_DIR$/View/sidebar.html" />
+        <option value="$PROJECT_DIR$/Conf/profile.inc.php" />
+        <option value="$PROJECT_DIR$/Model/ManageModel.php" />
+        <option value="$PROJECT_DIR$/Model/Manage.php" />
+        <option value="$PROJECT_DIR$/Public/DB.class.php" />
+        <option value="$PROJECT_DIR$/init.inc.php" />
+        <option value="$PROJECT_DIR$/Admin/manage.php" />
+        <option value="$PROJECT_DIR$/View/manage.html" />
+        <option value="$PROJECT_DIR$/Admin/admin.php" />
+        <option value="$PROJECT_DIR$/Model/ManageModel.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="300" />
+    <option name="y" value="25" />
+    <option name="width" value="1302" />
+    <option name="height" value="965" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMS" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\phpStudy\PHPTutorial\WWW\CMS" />
+      <recent name="C:\phpStudy\PHPTutorial\WWW\CMS\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c03729b-4099-43ae-8ae0-2df20dce1f36" name="Default" comment="" />
+      <created>1527813319787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527813319787</updated>
+      <workItem from="1527813321593" duration="4878000" />
+      <workItem from="1527820466110" duration="24581000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="29459000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="300" y="25" width="1302" height="965" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921824" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CMS第一天完成到三层架构的初建" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMS第一天完成到三层架构的初建" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp/www/SHOP/public/DB.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <marker date="1527824122587" expanded="true" signature="928:988" ph="INSERT INTO ${$_tables[0]}... " />
+            <marker date="1527824122587" expanded="true" signature="1497:1530" ph="UPDATE ${$_tables[0]}... " />
+            <marker date="1527824122587" expanded="true" signature="1828:1870" ph="SELECT id FR... ${$_tables[0]}" />
+            <marker date="1527824122587" expanded="true" signature="2129:2168" ph="DELETE FROM ${$_tables[0]}... " />
+            <marker date="1527824122587" expanded="true" signature="3202:3260" ph="SELECT ${$_s... ${$_table}" />
+            <marker date="1527824122587" expanded="true" signature="3753:3795" ph="SELECT COUNT... ${$_tables[0]}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/plugins/modifier.cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/Smarty.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="1173" column="20" lean-forward="false" selection-start-line="1173" selection-start-column="17" selection-end-line="1173" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ueditor/php/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Web开发/php2/CMS最终/CMS11.5/style/reg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/cast.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/details.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/friendlink.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feedback.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="502" column="1" lean-forward="false" selection-start-line="502" selection-start-column="1" selection-end-line="502" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Parser.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/debug.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_top_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#394#398#0" expanded="false" />
+            <element signature="e#398#402#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/sidebarn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/sidebarn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/profile.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ManageModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/cache.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/DB.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/ManageModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <marker date="1527858783510" expanded="true" signature="263:287" ph="SELECT * FRO... cms_manage" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
