@@ -11,5 +11,6 @@
     $smarty=new Smarty();
     require ROOT_PATH.'/Conf/profile.inc.php';
     require  ROOT_PATH.'/Public/DB.class.php';
+    require  ROOT_PATH.'/Public/Tool.class.php';
     require 'cache.inc.php';
     $smarty->caching = IS_CACHE;

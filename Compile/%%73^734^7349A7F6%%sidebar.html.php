@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-01 13:09:48
+<?php /* Smarty version 2.6.31, created on 2018-06-02 01:22:38
          compiled from sidebar.html */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -12,7 +12,7 @@
 <dl>
     <dt>管理首页</dt>
     <dd><a href="main.php" target="main">后台首页</a></dd>
-    <dd><a href="manage.php" target="main">管理员管理</a></dd>
+    <dd><a href="manage.php?action=list" target="main">管理员管理</a></dd>
 </dl>
 
 </body>

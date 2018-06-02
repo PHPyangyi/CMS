@@ -10,6 +10,9 @@
     require substr(dirname(__FILE__),0,-6).'/init.inc.php';
     require ROOT_PATH . '/Model/ManageModel.class.php';
 
-    $manage=new ManageModel();
-    $smarty->assign('AllManage',$manage->getManage());
-    $smarty->display('manage.html');
+     global $smarty;
+     new ManageModel($smarty);
+
+
+   // $smarty->assign('AllManage',$manage->getManage());
+

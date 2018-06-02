@@ -1,3 +1,5 @@
+<?php /* Smarty version 2.6.31, created on 2018-06-02 01:23:05
+         compiled from sidebarn.html */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,9 +10,9 @@
 <body id="sidebar">
 
 <dl>
-    <dt>管理首页</dt>
-    <dd><a href="main.php" target="main">后台首页</a></dd>
-    <dd><a href="manage.php?action=list" target="main">管理员管理</a></dd>
+    <dt>内容管理</dt>
+    <dd><a href="###">添加新文档</a></dd>
+    <dd><a href="###">查看文档列表</a></dd>
 </dl>
 
 </body>
