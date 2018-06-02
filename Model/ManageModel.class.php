@@ -25,17 +25,34 @@
             return $this->$name;
         }
 
-        public function getOneManage ()
+
+        //display level
+        public function getAllLevel ()
         {
             $sql = "SELECT 
 										id,
-										admin_user,
-										level 
+										level_name
 								FROM 
+										cms_level 
+								ORDER BY 
+										id ASC";
+            return parent::all($sql);
+        }
+
+
+        public function getOneManage ()
+        {
+            $sql = "SELECT 
+										*
+							FROM 
 										cms_manage 
 							WHERE 
 										id='$this->id' 
-								LIMIT 
+							OR
+										admin_user='$this->admin_user'
+							OR
+										level='$this->level'
+							LIMIT 
 										1";
             return  parent::one($sql);
         }

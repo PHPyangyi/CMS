@@ -11,16 +11,7 @@
     $smarty=new Smarty();
     require ROOT_PATH.'/Conf/profile.inc.php';
     require 'cache.inc.php';
-
-//
-//     require  ROOT_PATH.'/Public/DB.class.php';
-//    require  ROOT_PATH.'/Public/Tool.class.php';
-
-//     require ROOT_PATH . '/Controller/Controller.class.php';
-//     require ROOT_PATH . '/Controller/ManageController.class.php';
-//    require ROOT_PATH . '/Model/Model.class.php';
-//    require ROOT_PATH . '/Model/ManageModel.class.php';
-
+    //autoload...
     function __autoload($className) {
          if (substr($className,-10)=='Controller') {
             require  ROOT_PATH.'/Controller/'.$className.'.class.php';

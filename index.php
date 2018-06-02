@@ -7,6 +7,6 @@
      */
 
     require dirname(__FILE__) . '/init.inc.php';
-    $smarty->assign('name',$name);
+    $smarty->assign('name','标题');
     $smarty->display('index.html');
 
