@@ -2,205 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c03729b-4099-43ae-8ae0-2df20dce1f36" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/admin_login.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/content.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Admin/nav.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%0A^0A6^0A633A6C%%sidebarn.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%11^11A^11A9DC5F%%content.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%17^173^173572F1%%nav.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%99^990^9905EE73%%list.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%D2^D28^D2871C5A%%admin_login.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Conf/code.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/ContentController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/ListController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/LoginController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/NavController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Model/ContentModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Model/NavModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Page.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/ValidateCode.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/View/admin_login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/View/content.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/View/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/View/nav.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/CHANGES.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/INSTALL.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/LICENSE.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/adapters/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor.pack" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor_basic.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor_basic_source.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor_php4.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor_php5.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/ckeditor_source.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/contents.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/images/spacer.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/lang/_languages.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/lang/zh-cn.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/a11yhelp/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/a11yhelp/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/about/dialogs/about.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/adobeair/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/ajax/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/autogrow/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/bbcode/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/devtools/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/devtools/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/div/dialogs/div.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/docprops/dialogs/docprops.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/docprops/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/find/dialogs/find.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/flash/dialogs/flash.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/flash/images/placeholder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/button.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/checkbox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/radio.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/select.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/textarea.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/dialogs/textfield.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/forms/images/hiddenfield.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/iframe/dialogs/iframe.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/iframe/images/placeholder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/iframedialog/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/image/dialogs/image.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/link/dialogs/link.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/link/images/anchor.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/pastetext/dialogs/pastetext.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/placeholder/dialogs/placeholder.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/placeholder/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/placeholder/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/placeholder/placeholder.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/placeholder/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_address.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_blockquote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_div.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_h6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/showblocks/images/block_pre.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/dialogs/smiley.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/angel_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/angry_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/broken_heart.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/confused_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/cry_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/devil_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/envelope.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/heart.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/kiss.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/lightbulb.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/omg_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/regular_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/sad_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/shades_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/teeth_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/thumbs_down.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/thumbs_up.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/tounge_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/smiley/images/wink_smile.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/specialchar/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/styles/styles/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/stylesheetparser/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/table/dialogs/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/tableresize/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/templates/dialogs/templates.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/templates/templates/default.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/templates/templates/images/template1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/templates/templates/images/template2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/templates/templates/images/template3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/dialogs/uicolor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/lang/en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/lang/he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/uicolor.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/assets/yui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/uicolor/yui/yui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/plugins/xml/plugin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/dialog.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/editor.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/icons_rtl.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/dialog_sides.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/dialog_sides.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/dialog_sides_rtl.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/mini.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/noimage.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/sprites.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/sprites_ie6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/images/toolbar_start.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/skin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/skins/kama/templates.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/ckeditor/themes/default/theme.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/admin_login.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/admin_nav.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.4.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/modernizr.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/list.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Cache/占位" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/admin.php" afterPath="$PROJECT_DIR$/Admin/admin.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/index.php" afterPath="$PROJECT_DIR$/Admin/index.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/level.php" afterPath="$PROJECT_DIR$/Admin/level.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/main.php" afterPath="$PROJECT_DIR$/Admin/main.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/manage.php" afterPath="$PROJECT_DIR$/Admin/manage.php" />
-      <change beforePath="$PROJECT_DIR$/Admin/top.php" afterPath="$PROJECT_DIR$/Admin/top.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%17^17E^17E6A590%%manage.html.php" afterPath="$PROJECT_DIR$/Compile/%%17^17E^17E6A590%%manage.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%71^714^714F4B17%%header.html.php" afterPath="$PROJECT_DIR$/Compile/%%71^714^714F4B17%%header.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%7C^7C2^7C28C752%%top.html.php" afterPath="$PROJECT_DIR$/Compile/%%7C^7C2^7C28C752%%top.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%B5^B5E^B5EECA8B%%level.html.php" afterPath="$PROJECT_DIR$/Compile/%%B5^B5E^B5EECA8B%%level.html.php" />
-      <change beforePath="$PROJECT_DIR$/Conf/profile.inc.php" afterPath="$PROJECT_DIR$/Conf/profile.inc.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/Controller.class.php" afterPath="$PROJECT_DIR$/Controller/Controller.class.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/LevelController.class.php" afterPath="$PROJECT_DIR$/Controller/LevelController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/ManageController.class.php" afterPath="$PROJECT_DIR$/Controller/ManageController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Model/LevelModel.class.php" afterPath="$PROJECT_DIR$/Model/LevelModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Model/ManageModel.class.php" afterPath="$PROJECT_DIR$/Model/ManageModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Model/Model.class.php" afterPath="$PROJECT_DIR$/Model/Model.class.php" />
-      <change beforePath="$PROJECT_DIR$/Public/Tool.class.php" afterPath="$PROJECT_DIR$/Public/Tool.class.php" />
-      <change beforePath="$PROJECT_DIR$/Public/Validate.class.php" afterPath="$PROJECT_DIR$/Public/Validate.class.php" />
-      <change beforePath="$PROJECT_DIR$/View/header.html" afterPath="$PROJECT_DIR$/View/header.html" />
-      <change beforePath="$PROJECT_DIR$/View/level.html" afterPath="$PROJECT_DIR$/View/level.html" />
-      <change beforePath="$PROJECT_DIR$/View/manage.html" afterPath="$PROJECT_DIR$/View/manage.html" />
-      <change beforePath="$PROJECT_DIR$/View/sidebarn.html" afterPath="$PROJECT_DIR$/View/sidebarn.html" />
-      <change beforePath="$PROJECT_DIR$/View/top.html" afterPath="$PROJECT_DIR$/View/top.html" />
-      <change beforePath="$PROJECT_DIR$/cache.inc.php" afterPath="$PROJECT_DIR$/cache.inc.php" />
-      <change beforePath="$PROJECT_DIR$/css/admin.css" afterPath="$PROJECT_DIR$/css/admin.css" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/init.inc.php" afterPath="$PROJECT_DIR$/init.inc.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -221,24 +24,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/content.php">
+      <file leaf-file-name="占位" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cache/占位">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/View/content.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1953">
-              <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -419,7 +210,7 @@
       <workItem from="1527820466110" duration="24581000" />
       <workItem from="1527863002271" duration="230000" />
       <workItem from="1527899949494" duration="8403000" />
-      <workItem from="1527989170606" duration="30275000" />
+      <workItem from="1527989170606" duration="30444000" />
     </task>
     <task id="LOCAL-00001" summary="phpstrom出bug了测试一下">
       <created>1527863140220</created>
@@ -428,11 +219,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527863140220</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CMS第三天4.8 遗漏 完成了在线编辑器的嵌入">
+      <created>1528037807835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528037807835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81228000" />
+    <option name="totallyTimeSpent" value="81397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -476,14 +274,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Conf/code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/admin_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -884,14 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/ListController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-1.4.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -931,8 +713,24 @@
         <state relative-caret-position="1953">
           <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/ListController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/占位">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
