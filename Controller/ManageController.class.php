@@ -11,11 +11,9 @@
         public function __construct($smarty)
          {
             parent::__construct($smarty,new ManageModel());
-
-            $this->Action();
         }
 
-        private function Action ()
+        public function Action ()
         {
             switch ($_GET['action']) {
                 case 'show':
@@ -33,14 +31,25 @@
                 default:
                     echo 'error';
             }
-            $this->smarty->display('manage.html');
+
         }
+
+
+
+
 
         private function show ()
         {
+//            $page=new Page($this->model->getManageTotal(),PAGE_SIZE);
+//            $this->model->limit = $page->limit;
+
+            parent::page($this->model->getManageTotal());
+
             $this->smarty->assign('show',true);
             $this->smarty->assign('title','管理员列表');
             $this->smarty->assign('AllManage',   $this->model->getManage());
+            //page
+//            $this->smarty->assign('page',$page->showPage());
         }
 
         private function add ()
@@ -66,7 +75,9 @@
             }
             $this->smarty->assign('add',true);
             $this->smarty->assign('title','新增管理员');
-            $this->smarty->assign('AllLevel',$this->model->getAllLevel());
+            $this->smarty->assign('prev_url',PREV_URL);
+            $levels=new LevelModel();
+            $this->smarty->assign('AllLevel',   $levels->getAllLevel());
         }
 
         private function update ()
@@ -90,10 +101,12 @@
                 $this->smarty->assign('id',$getOneManage->id);
                 $this->smarty->assign('level',$getOneManage->level);
                 $this->smarty->assign('admin_user',$getOneManage->admin_user);
-                $this->smarty->assign('admin_pass',$this->model->getOneManage()->admin_pass);
+                $this->smarty->assign('admin_pass',$getOneManage->admin_pass);
                 $this->smarty->assign('update',true);
                 $this->smarty->assign('title','修改管理员');
-                $this->smarty->assign('AllLevel',$this->model->getAllLevel());
+                $this->smarty->assign('prev_url',PREV_URL);
+                $levels=new LevelModel();
+                $this->smarty->assign('AllLevel',   $levels->getAllLevel());
             } else {
                 Tool::alertBack('非法操作！');
             }

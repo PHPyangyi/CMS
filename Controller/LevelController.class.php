@@ -10,6 +10,7 @@
     {
         public function __construct($smarty)
         {
+            Validate::checksession();
             parent::__construct($smarty,new LevelModel());
             $this->Action();
         }
@@ -36,10 +37,17 @@
 
         private function show ()
         {
+//            $page=new Page($this->model->getLevelTotal(),PAGE_SIZE);
+//            $this->model->limit = $page->limit;
+
+            parent::page($this->model->getLevelTotal());
+
             $this->smarty->assign('show',true);
             $this->smarty->assign('title','管理员列表');
-            $this->smarty->assign('AllLevel',   $this->model->getAllLevel());
+            $this->smarty->assign('AllLevel',   $this->model->getAllLimitLevel());
 
+            //page
+         //   $this->smarty->assign('page',$page->showPage());
         }
 
         private function add ()
@@ -58,7 +66,7 @@
             }
             $this->smarty->assign('add',true);
             $this->smarty->assign('title','新增管理员');
-
+            $this->smarty->assign('prev_url',PREV_URL);
         }
 
         private function update ()
@@ -81,9 +89,11 @@
             if (isset($_GET['id'])) {
                 $this->model->id = $_GET['id'];
                 is_object($this->model->getOneLevel()) ? true : Tool::alertBack('等级传值的id有误！');
-                $this->smarty->assign('id',$this->model->getOneLevel()->id);
-                $this->smarty->assign('level_name',$this->model->getOneLevel()->level_name);
-                $this->smarty->assign('level_info',$this->model->getOneLevel()->level_info);
+                $level=$this->model->getOneLevel();
+                $this->smarty->assign('id', $level->id);
+                $this->smarty->assign('level_name', $level->level_name);
+                $this->smarty->assign('level_info', $level->level_info);
+                $this->smarty->assign('prev_url',PREV_URL);
                 $this->smarty->assign('update',true);
                 $this->smarty->assign('title','修改等级');
             } else {

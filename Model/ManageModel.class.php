@@ -13,30 +13,63 @@
         private $admin_pass;
         private $level;
         private $id;
+        private $limit;
+        private $last_ip;
+
 
         public function __set($name, $value)
         {
             // TODO: Implement __set() method.
-            $this->$name = $value;
+            $this->$name = Tool::htmlString( $value );
         }
         public function __get($name)
         {
             // TODO: Implement __get() method.
             return $this->$name;
         }
-
-
-        //display level
-        public function getAllLevel ()
+        //count ip login
+        public function setLoginCount ()
         {
-            $sql = "SELECT 
-										id,
-										level_name
+            $sql =" UPDATE cms_manage SET  
+                                          login_count=login_count+1,
+                                          last_ip='$this->last_ip',
+                                          last_time=NOW()
+                                      WHERE 
+                                          admin_user='$this->admin_user'
+                                      LIMIT 
+                                          1 ";
+            return parent::aud($sql);
+        }
+
+
+
+
+        //check login
+        public function getLoginManage ()
+        {
+            $_sql = "SELECT 
+										m.admin_user,
+										l.level_name 
 								FROM 
-										cms_level 
-								ORDER BY 
-										id ASC";
-            return parent::all($sql);
+										cms_manage m,
+										cms_level l
+								WHERE 
+										m.admin_user='$this->admin_user' 
+									AND 
+										m.admin_pass='$this->admin_pass'
+									AND
+										m.level=l.id
+									LIMIT 1";
+            return parent::one($_sql);
+        }
+
+
+
+         //获取总记录数
+        public function getManageTotal ()
+        {
+            $sql="SELECT COUNT(*) AS c FROM cms_manage ";
+            return parent::total($sql);
         }
 
 
@@ -61,21 +94,20 @@
         public function getManage ()
         {
             $sql = "SELECT 
-                          m.id,
+										m.id,
 										m.admin_user,
 										m.login_count,
 										m.last_ip,
 										m.last_time, 
 										l.level_name
 								FROM 
-										cms_manage AS m,
-										cms_level  AS  l
+										cms_manage m,
+										cms_level l
 								WHERE
 										l.id = m.level
 							ORDER BY
-										m.id ASC
-								LIMIT
-										0,20";
+										m.id DESC 
+									$this->limit";
 
             return parent::all($sql);
         }

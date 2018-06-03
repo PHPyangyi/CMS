@@ -16,3 +16,8 @@
     define('DB_USER','root');
     define('DB_PWD','root');
     define('DB_NAME','cms');
+
+    define('PAGE_SIZE',10);
+
+    define('PREV_URL',@$_SERVER["HTTP_REFERER"]);	//上一页地址
+    define('NAV_SIZE',10);

@@ -1,7 +1,5 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-02 12:58:49
+<?php /* Smarty version 2.6.31, created on 2018-06-03 09:12:24
          compiled from manage.html */ ?>
-<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'manage.html', 29, false),)), $this); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -28,13 +26,13 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
 
 <?php if ($this->_tpl_vars['show']): ?>
 <table cellspacing="0">
-    <tr><th>编号</th><th>用户名</th><th>等级</th><th>登录次数</th><th>最近登录ip</th><th>最近登录时间</th><th>操作</th></tr>
+    <tr><th>序号</th><th>用户名</th><th>等级</th><th>登录次数</th><th>最近登录ip</th><th>最近登录时间</th><th>操作</th></tr>
     <?php $_from = $this->_tpl_vars['AllManage']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
 ?>
     <tr>
-        <td><?php echo smarty_function_counter(array(), $this);?>
- </td>
+        <td><?php echo $this->_tpl_vars['key']+$this->_tpl_vars['num']+1; ?>
+</td>
         <td><?php echo $this->_tpl_vars['value']->admin_user; ?>
 </td>
         <td><?php echo $this->_tpl_vars['value']->level_name; ?>
@@ -52,6 +50,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
     <?php endforeach; endif; unset($_from); ?>
 </table>
 <p class="center">[ <a href="manage.php?action=add">新增管理员</a> ]</p>
+<div id="page"><?php echo $this->_tpl_vars['page']; ?>
+</div>
 <?php endif; ?>
 
 <?php if ($this->_tpl_vars['add']): ?>
@@ -70,7 +70,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
             <?php endforeach; endif; unset($_from); ?>
         </select>
         </td></tr>
-        <tr><td><input type="submit" name="send" value="新增管理员" class="submit" onclick="return checkAddForm();" /> [ <a href="manage.php?action=show">返回列表</a> ]</td></tr>
+        <tr><td><input type="submit" name="send" value="新增管理员" class="submit" onclick="return checkAddForm();" /> [ <a href="<?php echo $this->_tpl_vars['prev_url']; ?>
+">返回列表</a> ]</td></tr>
     </table>
 </form>
 <?php endif; ?>
@@ -97,7 +98,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', '
             <?php endforeach; endif; unset($_from); ?>
         </select>
         </td></tr>
-        <tr><td><input type="submit" name="send" value="修改管理员" class="submit" onclick="return checkUpdateForm();" /> [ <a href="manage.php?action=show">返回列表</a> ]</td></tr>
+        <tr><td><input type="submit" name="send" value="修改管理员" class="submit" onclick="return checkUpdateForm();" /> [<a href="<?php echo $this->_tpl_vars['prev_url']; ?>
+">返回列表</a> ]</td></tr>
     </table>
 </form>
 <?php endif; ?>

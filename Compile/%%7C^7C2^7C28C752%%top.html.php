@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-02 05:20:13
+<?php /* Smarty version 2.6.31, created on 2018-06-03 13:32:37
          compiled from top.html */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -20,7 +20,9 @@
 </ul>
 
 <p>
-    您好，<strong>admin</strong> [ 超级管理员 ] [ <a href="../" target="_blank">去首页</a> ] [ 退出 ]
+    您好，<strong><?php echo $this->_tpl_vars['admin_user']; ?>
+</strong> [ <?php echo $this->_tpl_vars['level_name']; ?>
+ ] [ <a href="../" target="_blank">去首页</a> ] [ <a href="admin_login.php?action=logout" target="_parent">退出</a> ]
 </p>
 
 </body>

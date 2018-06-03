@@ -10,17 +10,27 @@
         private $id;
         private $level_name;
         private $level_info;
+        private $limit;
 
         public function __set($name, $value)
         {
             // TODO: Implement __set() method.
-            $this->$name = $value;
+            $this->$name =Tool::htmlString( $value );
         }
         public function __get($name)
         {
             // TODO: Implement __get() method.
             return $this->$name;
         }
+
+
+        //获取总记录数
+        public function getLevelTotal ()
+        {
+            $sql="SELECT COUNT(*) AS c FROM cms_level ";
+            return parent::total($sql);
+        }
+
         //select one level
         public function getOneLevel ()
         {
@@ -41,6 +51,21 @@
         }
 
         //display level
+        public function getAllLimitLevel ()
+        {
+            $sql = "SELECT 
+										id,
+										level_name
+								FROM 
+										cms_level 
+								ORDER BY 
+										id DESC 
+										
+								$this->limit";
+            return parent::all($sql);
+        }
+
+        //display level
         public function getAllLevel ()
         {
             $sql = "SELECT 
@@ -49,7 +74,8 @@
 								FROM 
 										cms_level 
 								ORDER BY 
-										id ASC";
+										id ASC
+										";
             return parent::all($sql);
         }
 

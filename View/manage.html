@@ -23,10 +23,10 @@
 
 {if $show}
 <table cellspacing="0">
-    <tr><th>编号</th><th>用户名</th><th>等级</th><th>登录次数</th><th>最近登录ip</th><th>最近登录时间</th><th>操作</th></tr>
+    <tr><th>序号</th><th>用户名</th><th>等级</th><th>登录次数</th><th>最近登录ip</th><th>最近登录时间</th><th>操作</th></tr>
     {foreach from=$AllManage key=key item=value}
     <tr>
-        <td>{counter} </td>
+        <td>{$key+$num+1}</td>
         <td>{$value->admin_user}</td>
         <td>{$value->level_name}</td>
         <td>{$value->login_count}</td>
@@ -37,6 +37,7 @@
     {/foreach}
 </table>
 <p class="center">[ <a href="manage.php?action=add">新增管理员</a> ]</p>
+<div id="page">{$page}</div>
 {/if}
 
 {if $add}
@@ -51,7 +52,7 @@
             {/foreach}
         </select>
         </td></tr>
-        <tr><td><input type="submit" name="send" value="新增管理员" class="submit" onclick="return checkAddForm();" /> [ <a href="manage.php?action=show">返回列表</a> ]</td></tr>
+        <tr><td><input type="submit" name="send" value="新增管理员" class="submit" onclick="return checkAddForm();" /> [ <a href="{$prev_url}">返回列表</a> ]</td></tr>
     </table>
 </form>
 {/if}
@@ -70,7 +71,7 @@
             {/foreach}
         </select>
         </td></tr>
-        <tr><td><input type="submit" name="send" value="修改管理员" class="submit" onclick="return checkUpdateForm();" /> [ <a href="manage.php?action=show">返回列表</a> ]</td></tr>
+        <tr><td><input type="submit" name="send" value="修改管理员" class="submit" onclick="return checkUpdateForm();" /> [<a href="{$prev_url}">返回列表</a> ]</td></tr>
     </table>
 </form>
 {/if}

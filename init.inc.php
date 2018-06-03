@@ -5,12 +5,14 @@
      * Date: 2018/6/1
      * Time: 17:28
      */
+    session_start();
     header('Content-Type:text/html;charset=utf-8');
     define('ROOT_PATH',dirname(__FILE__));
     require ROOT_PATH.'/Smarty/Smarty.class.php';
     $smarty=new Smarty();
     require ROOT_PATH.'/Conf/profile.inc.php';
     require 'cache.inc.php';
+
     //autoload...
     function __autoload($className) {
          if (substr($className,-10)=='Controller') {

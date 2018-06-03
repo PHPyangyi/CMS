@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-02 05:14:58
+<?php /* Smarty version 2.6.31, created on 2018-06-03 14:04:07
          compiled from header.html */ ?>
 <div id="top">
     <?php echo $this->_tpl_vars['title']; ?>
@@ -12,17 +12,16 @@
 </div>
 <div id="nav">
     <ul>
-        <li><a href="###">首页</a></li>
-        <li><a href="###">军事动态</a></li>
-        <li><a href="###">八卦娱乐</a></li>
-        <li><a href="###">时尚女人</a></li>
-        <li><a href="###">科技频道</a></li>
-        <li><a href="###">智能手机</a></li>
-        <li><a href="###">美容护肤</a></li>
-        <li><a href="###">热门汽车</a></li>
-        <li><a href="###">房产家居</a></li>
-        <li><a href="###">读书教育</a></li>
-        <li><a href="###">股票基金</a></li>
+        <li><a href="index.php">首页</a></li>
+        <?php if ($this->_tpl_vars['FrontNav']): ?>
+        <?php $_from = $this->_tpl_vars['FrontNav']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <li><a href="list.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+"><?php echo $this->_tpl_vars['value']->nav_name; ?>
+</a></li>
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
     </ul>
 </div>
 <div id="search">

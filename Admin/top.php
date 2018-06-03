@@ -7,4 +7,7 @@
      */
     require substr(dirname(__FILE__),0,-6).'/init.inc.php';
     global $smarty;
+    Validate::checkSession();
+    $smarty->assign('admin_user',$_SESSION['admin']['admin_user']);
+    $smarty->assign('level_name',$_SESSION['admin']['level_name']);
     $smarty->display('top.html');

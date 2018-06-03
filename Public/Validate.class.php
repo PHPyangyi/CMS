@@ -22,6 +22,10 @@
             } elseif ($flag == 'max') {
                 if (mb_strlen(trim($date),'utf-8') > $length) return true;
                 return false;
+            }
+            elseif ($flag == 'equals') {
+                if (mb_strlen(trim($date),'utf-8') != $length) return true;
+                return false;
             } else {
                 Tool::alertBack('EROOR：参数传递的错误，必须是min,max！');
             }
@@ -33,6 +37,13 @@
             if (trim($date) != trim($otherdate)) return true;
             return false;
         }
+
+        // check session
+        static public function checksession ()
+        {
+            if (!isset($_SESSION['admin'])) Tool::alertLocation('请登录','admin_login.php');
+        }
+
 
 
     }
