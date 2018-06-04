@@ -22,7 +22,10 @@
         private $commend;
         private $count;
         private $color;
+        private $sort;
+        private $readlimit;
         private $id;
+        private $limit;
 
         //拦截器(__set)
         public function __set($name, $value) {
@@ -110,6 +113,8 @@
 																				count,
 																				gold,
 																				color,
+																				sort,
+																				readlimit,
 																				date
 																		) 
 														VALUES (
@@ -127,6 +132,8 @@
 																				'$this->count',
 																				'$this->gold',
 																				'$this->color',
+																				'$this->sort',
+																				'$this->readlimit',
 																				NOW()
 																		)";
             return parent::aud($sql);
@@ -137,20 +144,48 @@
         public function getOneContent()
         {
             $sql = "SELECT 
-											id,
-											title,
-											nav,
-											content,
-											info,
-											date,
-											count,
-											author,
-											source 
+											*
 								FROM 
 											cms_content
 								WHERE
 											id='$this->id'";
             return parent::one($sql);
+        }
+
+
+        //修改文档
+        public function updateContent()
+        {
+            $sql = "UPDATE 
+											cms_content 
+								SET 
+											title='$this->title',
+											nav='$this->nav',
+											info='$this->info',
+											thumbnail='$this->thumbnail',
+											source='$this->source',
+											author='$this->author',
+											tag='$this->tag',
+											keyword='$this->keyword',
+											attr='$this->attr',
+											content='$this->content',
+											commend='$this->commend',
+											count='$this->count',
+											gold='$this->gold',
+											color='$this->color',
+											sort='$this->sort',
+											readlimit='$this->readlimit'
+							WHERE 
+											id='$this->id' 
+								LIMIT 
+											1";
+            return parent::aud($sql);
+        }
+
+        public function deleteContent()
+        {
+            $sql="DELETE FROM cms_content WHERE id='$this->id'  ";
+            return parent::aud($sql);
         }
 
 

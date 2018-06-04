@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 09:38:05
+<?php /* Smarty version 2.6.31, created on 2018-06-04 12:56:58
          compiled from details.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
