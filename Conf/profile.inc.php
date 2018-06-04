@@ -21,3 +21,6 @@
 
     define('PREV_URL',@$_SERVER["HTTP_REFERER"]);	//上一页地址
     define('NAV_SIZE',10);
+
+
+    define('UPDIR','/uploads/');											//上传主目录

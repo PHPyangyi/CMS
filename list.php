@@ -16,4 +16,4 @@
     $list = new ListController($smarty);
     $list->getNav();
 
-    $smarty->display('list.html');
+    $smarty->display('list.html',$_GET['id']);

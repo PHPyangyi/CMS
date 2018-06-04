@@ -9,7 +9,7 @@
 <body>
 {include file='header.html'}
 <div id="list">
-    <h2>当前位置 &gt; 军事动态</h2>
+    <h2>当前位置 &gt; {$nav}</h2>
     <dl>
         <dt><img src="images/none.jpg" alt="" /></dt>
         <dd>[<strong>军事动态</strong>] <a href="###">联合利华因散布涨价信息被罚200万</a></dd>
@@ -42,14 +42,21 @@
     </dl>
     <div id="page">分页</div>
 </div>
+
 <div id="sidebar">
     <div class="nav">
         <h2>子栏目列表</h2>
-        <strong><a href="###">中国军事</a></strong>
-        <strong><a href="###">美国军事</a></strong>
-        <strong><a href="###">日本军事</a></strong>
-        <strong><a href="###">德国军事</a></strong>
+
+        {if $childnav}
+        {foreach from=$childnav key=key item=value}
+        <strong><a href="list.php?id={$value->id}">{$value->nav_name}</a></strong>
+        {/foreach}
+        {else}
+        <span>该栏目没有子类</span>
+        {/if}
+
     </div>
+
     <div class="right">
         <h2>本类推荐</h2>
         <ul>

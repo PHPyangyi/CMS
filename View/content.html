@@ -10,9 +10,9 @@
     <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.all.min.js"> </script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" src="../js/test.js"></script>
 
-    <script type="text/javascript" src="../js/admin_level.js"></script>
+
+    <script type="text/javascript" src="../js/admin_content.js"></script>
 </head>
 <body id="main">
 
@@ -30,7 +30,7 @@
 
 
 {if $add}
-<form>
+<form name="content">
     <table cellspacing="0" class="content">
         <tr><th><strong>发布一条新文档</strong></th></tr>
         <tr><td>文档标题：<input type="text" name="title" class="text" /></td></tr>
@@ -42,13 +42,15 @@
         </td></tr>
         <tr><td>标　　签：<input type="text" name="tag" class="text" /></td></tr>
         <tr><td>关 键 字：<input type="text" name="keyword" class="text" /></td></tr>
-        <tr><td>缩 略 图：<input type="text" name="thumbnail" class="text" /></td></tr>
+        <tr><td>缩 略 图：<input type="text" name="thumbnail" class="text" readonly="readonly" />
+            <input type="button" value="上传缩略图" onclick="centerWindow('../View/upfile.html','upfile','400','200')" />
+            <img name="pic" style="display:none;" />
+        </td></tr>
         <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
         <tr><td>作　　者：<input type="text" name="author" class="text" /></td></tr>
         <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
 
-        <tr><td><textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;   " rows="10"></textarea></td></tr>
-
+        <tr class="ckeditor"><td> <textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;  " rows="10"  id="TextArea1" ></textarea> </td></tr>
 
         <tr><td>评论选项：<input type="radio" name="commend" value="1" checked="checked" />允许评论
             <input type="radio" name="commend" value="0" />禁止评论
