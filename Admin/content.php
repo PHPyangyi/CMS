@@ -7,6 +7,7 @@
      */
     require substr(dirname(__FILE__),0,-6).'/init.inc.php';
     Validate::checkSession();
+
     global $smarty;
     $content = new ContentController($smarty);   //入口
     $content->Action();

@@ -1,49 +1,102 @@
 @CHARSET "UTF-8";
-#reg {
-    width:100%;
+#details {
+    width:690px;
+    min-height:600px;
     float:left;
     margin:0 0 10px 0;
 }
-#reg h2 {
+#details h2 {
     border:1px solid #ccc;
     border-bottom:none;
-    text-align:center;
 }
-#reg h2 a {
+#details h2 a {
     color:#360;
     text-decoration:none;
 }
-#reg h2 a:hover {
+#details h2 a:hover {
     color:#f60;
 }
-#reg form {
+#details h3 {
+    text-align:center;
+    color:#333;
+    padding:20px 0 0 0;
+    font-size:22px;
+}
+#details div.d1 {
+    text-align:center;
+    padding:10px;
+}
+#details div.d2 {
+    padding:10px;
+    margin:10px;
+    background:#ffffee;
     border:1px solid #ccc;
-    padding:15px 0;
+    line-height:150%;
 }
-#reg form dl {
-    padding-left:250px;
+#details div.d3 {
+    padding:20px 10px;
+    line-height:250%;
 }
-#reg form dl dd {
-    padding:5px 0;
+#sidebar {
+    width:260px;
+    min-height:600px;
+    float:right;
+    margin:0 0 10px 0;
 }
-#reg form dl dd span.red {
-    color:red;
+#sidebar div.nav {
+    border:1px solid #ccc;
+    text-align:center;
+    padding:0 0 5px 0;
+    margin:0 0 10px 0;
 }
-#reg form dl dd input.text,#reg form dl dd select {
-    width:220px;
-    height:22px;
-    border:1px solid #999;
-    background:#eee;
+#sidebar div.nav span {
+    padding:5px 0 0 0;
+    display:inline-block;
 }
-#reg form dl dd img.face {
-    margin:0 0 0 60px;
+#sidebar div.nav strong {
+    width:110px;
+    height:25px;
+    line-height:25px;
+    border:1px solid #ccc;
+    display:inline-block;
+    margin:5px 0 0 0;
 }
-#reg form dl dd img.code {
-    cursor:pointer;
-    margin:0 0 0 60px;
+#sidebar div.nav strong a {
+    font-weight:normal;
+    text-decoration:none;
+    color:#666;
+    display:inline-block;
+    width:110px;
+    height:25px;
+    background:#eef3f7;
 }
-#reg form dl dd input.submit{
-    cursor:pointer;
-    margin:0 0 0 60px;
+#sidebar div.right {
+    border:1px solid #ccc;
+    margin:0 0 10px 0;
 }
+#sidebar div.right ul {
+    padding:2px 10px 0 10px;
+}
+#sidebar div.right ul li {
+    height:23px;
+    line-height:23px;
+    background:url(../images/pointer.png) no-repeat left center;
+    padding:0 0 0 10px;
+}
+#sidebar div.right ul li em {
+    float:right;
+    font-style:normal;
+    font-family:Tahoma;
+}
+#sidebar div.right ul li a {
+    color:#666;
+    text-decoration:none;
+}
+#sidebar div.right ul li a:hover {
+    text-decoration:underline;
+}
+
+
+
+
 

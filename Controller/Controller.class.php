@@ -15,11 +15,11 @@
             $this->model=$model;
         }
 
-        protected function page ($total)
+        protected function page ($total,$pagesize = PAGE_SIZE)
         {
-            $page=new Page($total,PAGE_SIZE);
+            $page=new Page($total,$pagesize);
             $this->model->limit = $page->limit;
             $this->smarty->assign('page',$page->showPage());
-            $this->smarty->assign('num',($page->page-1)*PAGE_SIZE);
+            $this->smarty->assign('num',($page->page-1)*$pagesize);
         }
     }

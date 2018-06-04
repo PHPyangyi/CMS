@@ -26,9 +26,33 @@
             // TODO: Implement __get() method.
             return $this->$name;
         }
+        //获取所有非主类的id
+        public function getAllNavChildId()
+        {
+            $sql = "SELECT 
+											id 
+								FROM 
+											cms_nav 
+							WHERE 
+											pid<>0";
+            return parent::all($sql);
+        }
+
+        public function getNavChildId()
+        {
+            $_sql = "SELECT
+											id
+								FROM
+											cms_nav
+							WHERE
+											pid='$this->id'";
+            return parent::all($_sql);
+        }
+
 
         //导航排序
-        public function setNavSort() {
+        public function setNavSort()
+        {
             $sql="";
             foreach ($this->sort as $_key=>$_value) {
                 if (!is_numeric($_value)) continue;
@@ -174,6 +198,23 @@
 								WHERE
 										pid='$this->id'
 							ORDER BY 
+										sort ASC";
+            return parent::all($sql);
+        }
+
+
+        //查询所有主导航，不带limit
+        public function getAllFrontNav() {
+            $sql = "SELECT 
+										id,
+										nav_name,
+										nav_info,
+										sort 
+								FROM 
+										cms_nav
+								WHERE
+										pid=0
+							ORDER BY
 										sort ASC";
             return parent::all($sql);
         }

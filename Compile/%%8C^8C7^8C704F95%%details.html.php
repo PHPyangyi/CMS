@@ -1,46 +1,35 @@
+<?php /* Smarty version 2.6.31, created on 2018-06-04 09:38:05
+         compiled from details.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CMS内容管理系统</title>
     <link rel="stylesheet" type="text/css" href="css/basic.css" />
-    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <link rel="stylesheet" type="text/css" href="css/details.css" />
 </head>
 <body>
-{include file='header.html'}
-<div id="list">
-    <h2>当前位置 &gt; {$nav}</h2>
-
-    {if $AllListContent}
-    {foreach  from=$AllListContent key=key item=value  }
-    <dl>
-        <dt><a href="details.php?id={$value->id}" target="_blank"><img src="{$value->thumbnail}" alt="{$value->title}" /></a></dt>
-        <dd>[<strong>{$value->nav_name}</strong>] <a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></dd>
-        <dd>日期：{$value->date} 点击率：{$value->count} 好评：0</dd>
-        <dd>核心提示：{$value->info}</dd>
-    </dl>
-    {/foreach}
-    {else}
-    <p class="none">没有任何数据</p>
-    {/if}
-
-    <div id="page">{$page}</div>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => 'header.html', 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<div id="details">
+    <h2>当前位置 &gt; <?php echo $this->_tpl_vars['nav']; ?>
+</h2>
+    <h3><?php echo $this->_tpl_vars['titlec']; ?>
+</h3>
+    <div class="d1">时间：<?php echo $this->_tpl_vars['date']; ?>
+ 来源：<?php echo $this->_tpl_vars['source']; ?>
+ 作者：<?php echo $this->_tpl_vars['author']; ?>
+ 点击量：<?php echo $this->_tpl_vars['count']; ?>
 </div>
-
+    <div class="d2"><?php echo $this->_tpl_vars['info']; ?>
+</div>
+    <div class="d3"><?php echo $this->_tpl_vars['content']; ?>
+</div>
+</div>
 <div id="sidebar">
-    <div class="nav">
-        <h2>子栏目列表</h2>
-
-        {if $childnav}
-        {foreach from=$childnav key=key item=value}
-        <strong><a href="list.php?id={$value->id}">{$value->nav_name}</a></strong>
-        {/foreach}
-        {else}
-        <span>该栏目没有子类</span>
-        {/if}
-
-    </div>
-
     <div class="right">
         <h2>本类推荐</h2>
         <ul>
@@ -78,6 +67,10 @@
         </ul>
     </div>
 </div>
-{include file='footer.html'}
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => 'footer.html', 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
 </body>
 </html>

@@ -13,6 +13,14 @@
             if (trim($data) == '') return true;
             return false;
         }
+
+        //check number
+        static public function checkNum($date)
+        {
+            if (!is_numeric($date)) return true;
+            return false;
+        }
+
         //check length
         static public function checkLength ($date, $length, $flag)
         {

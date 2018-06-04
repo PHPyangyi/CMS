@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 02:24:02
+<?php /* Smarty version 2.6.31, created on 2018-06-04 10:24:03
          compiled from content.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>content</title>
     <link rel="stylesheet" type="text/css" href="../css/admin.css" />
-
+    <script type="text/javascript" src="../js/admin_content.js"></script>
     <script type="text/javascript" src="../js/modernizr.min.js"></script>
     <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>
@@ -14,7 +14,6 @@
     <script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>
 
 
-    <script type="text/javascript" src="../js/admin_content.js"></script>
 </head>
 <body id="main">
 
@@ -33,26 +32,79 @@
 </ol>
 
 
+
+<?php if ($this->_tpl_vars['show']): ?>
+<table cellspacing="0">
+    <tr><th>编号</th><th>标题</th><th>属性</th><th>文档类别</th><th>浏览次数</th><th>发布时间</th><th>操作</th></tr>
+    <?php if ($this->_tpl_vars['SearchContent']): ?>
+    <?php $_from = $this->_tpl_vars['SearchContent']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+    <tr>
+        <td><?php echo $this->_tpl_vars['key']+$this->_tpl_vars['num']+1; ?>
+</td>
+        <td><a href="../details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" title="<?php echo $this->_tpl_vars['value']->t; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></td>
+        <td><?php echo $this->_tpl_vars['value']->attr; ?>
+</td>
+        <td><a href="?action=show&nav=<?php echo $this->_tpl_vars['value']->nav; ?>
+"><?php echo $this->_tpl_vars['value']->nav_name; ?>
+</a></td>
+        <td><?php echo $this->_tpl_vars['value']->count; ?>
+</td>
+        <td><?php echo $this->_tpl_vars['value']->date; ?>
+</td>
+        <td><a href="manage.php?action=update&id=<?php echo $this->_tpl_vars['value']->id; ?>
+">修改</a> | <a href="manage.php?action=delete&id=<?php echo $this->_tpl_vars['value']->id; ?>
+" onclick="return confirm('你真的要删除这个管理员吗？') ? true : false">删除</a></td>
+    </tr>
+    <?php endforeach; endif; unset($_from); ?>
+    <?php else: ?>
+    <tr><td colspan="7">对不起，没有任何数据</td></tr>
+    <?php endif; ?>
+</table>
+<form action="?" method="get">
+    <div id="page">
+        <?php echo $this->_tpl_vars['page']; ?>
+
+        <input type="hidden" name="action" value="show" />
+        <select name="nav" class="select" style="height: 25px;">
+            <option value="0"  >默认全部</option>
+            <?php echo $this->_tpl_vars['nav']; ?>
+
+        </select>
+        <input value="查询" type="submit" />
+    </div>
+</form>
+<?php endif; ?>
+
+
+
+
 <?php if ($this->_tpl_vars['add']): ?>
-<form name="content">
+<form name="content" method="post" action="?action=add">
     <table cellspacing="0" class="content">
         <tr><th><strong>发布一条新文档</strong></th></tr>
-        <tr><td>文档标题：<input type="text" name="title" class="text" /></td></tr>
-        <tr><td>栏　　目：<select name="nav"><option>请选择一个栏目类别</option></select></td></tr>
-        <tr><td>定义属性：<input type="checkbox" name="top" value="头条" />头条
-            <input type="checkbox" name="rec" value="推荐" />推荐
-            <input type="checkbox" name="bold" value="加粗" />加粗
-            <input type="checkbox" name="skip" value="跳转" />跳转
+        <tr><td>文档标题：<input type="text" name="title" class="text" /> <span class="red">[必填]</span> ( * 标题2-50字符之间)</td></tr>
+        <tr><td>栏　　目：<select name="nav"><option value="" style="padding:0;">请选择一个栏目类别</option><?php echo $this->_tpl_vars['nav']; ?>
+</select> <span class="red">[必选]</span></td></tr>
+        <tr><td>定义属性：<input type="checkbox" name="attr[]" value="头条" />头条
+            <input type="checkbox" name="attr[]" value="推荐" />推荐
+            <input type="checkbox" name="attr[]" value="加粗" />加粗
+            <input type="checkbox" name="attr[]" value="跳转" />跳转
         </td></tr>
-        <tr><td>标　　签：<input type="text" name="tag" class="text" /></td></tr>
-        <tr><td>关 键 字：<input type="text" name="keyword" class="text" /></td></tr>
+        <tr><td>标　　签：<input type="text" name="tag" class="text" /> ( * 每个标签用','隔开，总长30位之内)</td></tr>
+        <tr><td>关 键 字：<input type="text" name="keyword" class="text" /> ( * 每个关键字用','隔开，总长30位之内)</td></tr>
         <tr><td>缩 略 图：<input type="text" name="thumbnail" class="text" readonly="readonly" />
             <input type="button" value="上传缩略图" onclick="centerWindow('../View/upfile.html','upfile','400','200')" />
-            <img name="pic" style="display:none;" />
+            <img name="pic" style="display:none;" /> ( * 必须是jpg,gif,png，并且200k内)
         </td></tr>
-        <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
-        <tr><td>作　　者：<input type="text" name="author" class="text" /></td></tr>
-        <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
+        <tr><td>文章来源：<input type="text" name="source" class="text" /> ( * 文章来源20位之内)</td></tr>
+        <tr><td>作　　者：<input type="text" value="<?php echo $this->_tpl_vars['author']; ?>
+" name="author" class="text" /> ( * 作者10位之内)</td></tr>
+        <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea> <span class="middle">( * 内容摘要200之内)</span></td></tr>
 
         <tr class="ckeditor"><td> <textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%;  " rows="10"  id="TextArea1" ></textarea> </td></tr>
 
@@ -76,14 +128,14 @@
             <option>高级会员</option>
             <option>VIP会员</option>
         </select>
-            标题颜色：<select name="color">
-                <option>默认颜色</option>
-                <option style="color:red;">红色</option>
-                <option style="color:blue;">蓝色</option>
-                <option style="color:orange;">橙色</option>
+            　 　　标题颜色：<select name="color">
+                <option value="">默认颜色</option>
+                <option value="red" style="color:red;">红色</option>
+                <option value="blue" style="color:blue;">蓝色</option>
+                <option value="orange" style="color:orange;">橙色</option>
             </select>
         </td></tr>
-        <tr><td><input type="submit" value="发布文档" /> <input type="reset" value="重置" /></td></tr>
+        <tr><td><input type="submit" name="send" onclick="return checkAddContent();" value="发布文档" /> <input type="reset" value="重置" /></td></tr>
         <tr><td></td></tr>
     </table>
 </form>

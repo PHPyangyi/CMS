@@ -2,8 +2,8 @@
     /**
      * Created by PhpStorm.
      * User: 阳毅
-     * Date: 2018/6/3
-     * Time: 22:01
+     * Date: 2018/6/4
+     * Time: 17:34
      */
     require dirname(__FILE__).'/init.inc.php';
     global $smarty;
@@ -12,8 +12,8 @@
     $nav=new NavController($smarty);
     $nav->showfront();   //display nav
 
+    $details = new DetailsController($smarty);
+    $details->Action();
 
-    $list = new ListController($smarty);
-    $list->Action();
 
-    $smarty->display('list.html',$_GET['id']);
+    $smarty->display('details.html');

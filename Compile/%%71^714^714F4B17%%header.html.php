@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 01:24:35
+<?php /* Smarty version 2.6.31, created on 2018-06-04 09:28:06
          compiled from header.html */ ?>
 <div id="top">
     <?php echo $this->_tpl_vars['title']; ?>

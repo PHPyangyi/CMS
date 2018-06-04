@@ -67,4 +67,35 @@
             exit();
         }
 
+
+        //字符串截取
+        static public function subStr($object,$field,$length,$encoding)
+        {
+            if ($object) {
+                foreach ($object as $value) {
+                    if (mb_strlen($value->$field,$encoding) > $length) {
+                        $value->$field = mb_substr($value->$field,0,$length,$encoding).'...';
+                    }
+                }
+            }
+            return $object;
+        }
+
+        //讲html字符串转换成html标签
+        static public function unHtml($str)
+        {
+            return htmlspecialchars_decode($str);
+        }
+
+        //将对象数组转换成字符串，并且去掉最后的逗号
+        static public function objArrOfStr($object,$field) {
+            if ($object) {
+                $html='';
+                foreach ($object as $value) {
+                    $html .= $value->$field.',';
+                }
+            }
+            return substr($html,0,strlen($html)-1);
+        }
+
     }
