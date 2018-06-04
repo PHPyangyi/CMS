@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c03729b-4099-43ae-8ae0-2df20dce1f36" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%17^173^173572F1%%nav.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%17^17E^17E6A590%%manage.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%8C^8C7^8C704F95%%details.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%99^990^9905EE73%%list.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Compile/%%B5^B5E^B5EECA8B%%level.html.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Controller/DetailsController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/View/details.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/details.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604071759249.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604074232496.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604074655453.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604074838711.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604075728559.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604080934135.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604083639537.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604083847955.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/uploads/20180604/20180604084028575.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Admin/content.php" afterPath="$PROJECT_DIR$/Admin/content.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%0A^0A6^0A633A6C%%sidebarn.html.php" afterPath="$PROJECT_DIR$/Compile/%%0A^0A6^0A633A6C%%sidebarn.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%11^11A^11A9DC5F%%content.html.php" afterPath="$PROJECT_DIR$/Compile/%%11^11A^11A9DC5F%%content.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%3C^3C7^3C7803F8%%main.html.php" afterPath="$PROJECT_DIR$/Compile/%%3C^3C7^3C7803F8%%main.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%71^714^714F4B17%%header.html.php" afterPath="$PROJECT_DIR$/Compile/%%71^714^714F4B17%%header.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%73^734^7349A7F6%%sidebar.html.php" afterPath="$PROJECT_DIR$/Compile/%%73^734^7349A7F6%%sidebar.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%77^774^774BE9C9%%index.html.php" afterPath="$PROJECT_DIR$/Compile/%%77^774^774BE9C9%%index.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%7C^7C2^7C28C752%%top.html.php" afterPath="$PROJECT_DIR$/Compile/%%7C^7C2^7C28C752%%top.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%80^806^80621A61%%footer.html.php" afterPath="$PROJECT_DIR$/Compile/%%80^806^80621A61%%footer.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%D2^D28^D2871C5A%%admin_login.html.php" afterPath="$PROJECT_DIR$/Compile/%%D2^D28^D2871C5A%%admin_login.html.php" />
-      <change beforePath="$PROJECT_DIR$/Compile/%%FC^FCD^FCD2B37A%%admin.html.php" afterPath="$PROJECT_DIR$/Compile/%%FC^FCD^FCD2B37A%%admin.html.php" />
-      <change beforePath="$PROJECT_DIR$/Conf/profile.inc.php" afterPath="$PROJECT_DIR$/Conf/profile.inc.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/ContentController.class.php" afterPath="$PROJECT_DIR$/Controller/ContentController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/Controller.class.php" afterPath="$PROJECT_DIR$/Controller/Controller.class.php" />
-      <change beforePath="$PROJECT_DIR$/Controller/ListController.class.php" afterPath="$PROJECT_DIR$/Controller/ListController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Model/ContentModel.class.php" afterPath="$PROJECT_DIR$/Model/ContentModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Model/NavModel.class.php" afterPath="$PROJECT_DIR$/Model/NavModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Public/Image.class.php" afterPath="$PROJECT_DIR$/Public/Image.class.php" />
-      <change beforePath="$PROJECT_DIR$/Public/Tool.class.php" afterPath="$PROJECT_DIR$/Public/Tool.class.php" />
-      <change beforePath="$PROJECT_DIR$/Public/Validate.class.php" afterPath="$PROJECT_DIR$/Public/Validate.class.php" />
-      <change beforePath="$PROJECT_DIR$/View/content.html" afterPath="$PROJECT_DIR$/View/content.html" />
-      <change beforePath="$PROJECT_DIR$/View/list.html" afterPath="$PROJECT_DIR$/View/list.html" />
-      <change beforePath="$PROJECT_DIR$/css/admin.css" afterPath="$PROJECT_DIR$/css/admin.css" />
-      <change beforePath="$PROJECT_DIR$/css/basic.css" afterPath="$PROJECT_DIR$/css/basic.css" />
-      <change beforePath="$PROJECT_DIR$/css/details.css" afterPath="$PROJECT_DIR$/css/details.css" />
-      <change beforePath="$PROJECT_DIR$/js/admin_content.js" afterPath="$PROJECT_DIR$/js/admin_content.js" />
-      <change beforePath="$PROJECT_DIR$/list.php" afterPath="$PROJECT_DIR$/list.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -225,7 +181,7 @@
       <workItem from="1527863002271" duration="230000" />
       <workItem from="1527899949494" duration="8403000" />
       <workItem from="1527989170606" duration="30520000" />
-      <workItem from="1528071138402" duration="19841000" />
+      <workItem from="1528071138402" duration="20930000" />
     </task>
     <task id="LOCAL-00001" summary="phpstrom出bug了测试一下">
       <created>1527863140220</created>
@@ -255,11 +211,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528084593832</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CMS第五天，下午">
+      <created>1528108422594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528108422594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101314000" />
+    <option name="totallyTimeSpent" value="102403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -296,7 +259,8 @@
     <MESSAGE value="CMS第三天4.8 遗漏 完成了在线编辑器的嵌入" />
     <MESSAGE value="CMS第三天4.8 遗漏 完成了在线编辑器的嵌入。" />
     <MESSAGE value="CMS第四天4.8 遗漏 完成了缩略图类的完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMS第四天4.8 遗漏 完成了缩略图类的完成" />
+    <MESSAGE value="CMS第五天，下午" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMS第五天，下午" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -355,14 +319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,6 +693,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="38" />
           <folding />
         </state>
       </provider>
