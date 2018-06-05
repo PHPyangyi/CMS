@@ -189,4 +189,20 @@
         }
 
 
+        //累计文档的点击量
+        public function setContentCount()
+        {
+            $sql = "UPDATE 
+											cms_content 
+									SET 
+											count=count+1
+							WHERE 
+											id='$this->id' 
+								LIMIT 
+											1";
+            return parent::aud($sql);
+        }
+
+
+
     }

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 12:56:50
+<?php /* Smarty version 2.6.31, created on 2018-06-05 15:04:23
          compiled from index.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>CMS内容管理系统</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="../js/reg.js"></script>
 </head>
 <body>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
@@ -16,38 +17,37 @@ unset($_smarty_tpl_vars);
 
 <div id="user">
     <h2>会员信息</h2>
-    <form>
-        <label>用户名：<input type="text" name="username" class="text" /></label>
-        <label>密　码：<input type="password" name="password" class="text" /></label>
-        <label>验证码：<input type="text" name="code" class="text code" /></label>
-        <img src="images/vdimgck.png" alt="验证码" />
-        <p><input type="submit" name="send" value="登录" class="submit" /> <a href="###">注册会员</a> <a href="###">忘记密码?</a></p>
+    <?php if ($this->_tpl_vars['data']): ?>
+    <div class="a">您好，<strong><?php echo $this->_tpl_vars['data']; ?>
+</strong> 欢迎光临</div>
+    <div class="b">
+        <img src="images/<?php echo $this->_tpl_vars['face']; ?>
+" alt="<?php echo $this->_tpl_vars['data']; ?>
+" />
+        <a href="###">个人中心</a>
+        <a href="###">我的评论</a>
+        <a href="register.php?action=logout">退出登录</a>
+    </div>
+    <?php else: ?>
+    <form action="register.php?action=login" method="post" name="login">
+        <label>用户名：<input type="text" name="user" class="text" /></label>
+        <label>密　码：<input type="password" name="pass" class="text" /></label>
+        <label class="yzm">验证码：<input type="text" name="code" class="text code" /> <img src="Conf/code.php"  style="width: 75px;height: 25px;cursor:hand;" onclick="javascript:this.src='Conf/code.php?tm='+Math.random();" class="code" /></label>
+        <p><input type="submit" name="send" value="登录" onclick="return checkLogin();" class="submit" /> <a href="register.php?action=reg">注册会员</a> <a href="###">忘记密码?</a> </p>
     </form>
+    <?php endif; ?>
     <h3>最近登录会员 <span>────────────</span></h3>
+    <?php $_from = $this->_tpl_vars['AllLaterUser']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
     <dl>
-        <dt><img src="images/01.gif" alt="头像" /></dt>
-        <dd>樱桃小丸子</dd>
+        <dt><img src="images/<?php echo $this->_tpl_vars['value']->face; ?>
+" alt="头像" /></dt>
+        <dd><?php echo $this->_tpl_vars['value']->user; ?>
+</dd>
     </dl>
-    <dl>
-        <dt><img src="images/04.gif" alt="头像" /></dt>
-        <dd>蜡笔小新</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/12.gif" alt="头像" /></dt>
-        <dd>圣斗士星矢</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/17.gif" alt="头像" /></dt>
-        <dd>黑崎一护</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/22.gif" alt="头像" /></dt>
-        <dd>我叫MT</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/14.gif" alt="头像" /></dt>
-        <dd>海贼王路飞</dd>
-    </dl>
+    <?php endforeach; endif; unset($_from); ?>
+
 </div>
 <div id="news">
     <h3><a href="###">联合利华因散布涨价信息被罚</a></h3>

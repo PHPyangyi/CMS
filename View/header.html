@@ -1,5 +1,14 @@
 <div id="top">
     {$title}
+
+    {if $data}
+    <span style="color: red; font-size: 15px;">{$data}&nbsp&nbsp你好~&nbsp</span> <a href="register.php?action=logout">退出</a>
+    {else}
+    <a href="register.php?action=reg" class="user">注册</a>
+    <a href="register.php?action=login" class="user">登录</a>
+    {/if}
+
+
     <a href="###">这里可以放置文字广告1</a>
     <a href="###">这里可以放置文字广告2</a>
 </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 12:56:51
+<?php /* Smarty version 2.6.31, created on 2018-06-05 12:06:44
          compiled from footer.html */ ?>
 <div id="link">
     <h2><span><a href="###">所有链接</a> | <a href="###">申请加入</a></span>友情链接</h2>

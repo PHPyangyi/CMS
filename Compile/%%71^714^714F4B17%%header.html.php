@@ -1,7 +1,17 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-04 12:56:50
+<?php /* Smarty version 2.6.31, created on 2018-06-05 12:06:44
          compiled from header.html */ ?>
 <div id="top">
     <?php echo $this->_tpl_vars['title']; ?>
+
+
+    <?php if ($this->_tpl_vars['data']): ?>
+    <span style="color: red; font-size: 15px;"><?php echo $this->_tpl_vars['data']; ?>
+&nbsp&nbsp你好~&nbsp</span> <a href="register.php?action=logout">退出</a>
+    <?php else: ?>
+    <a href="register.php?action=reg" class="user">注册</a>
+    <a href="register.php?action=login" class="user">登录</a>
+    <?php endif; ?>
+
 
     <a href="###">这里可以放置文字广告1</a>
     <a href="###">这里可以放置文字广告2</a>

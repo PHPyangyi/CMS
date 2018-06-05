@@ -25,9 +25,11 @@
 
                 $this->model->id = $_GET['id'];
 
+                if (!$this->model->setContentCount()) Tool::alertBack('警告：不存在此文档！');
+
                 $content = $this->model->getOneContent();
 
-                if (!$content) Tool::alertBack('警告：不存在此文档！');
+
 
                 $this->smarty->assign('titlec',$content->title);
                 $this->smarty->assign('count',$content->count);

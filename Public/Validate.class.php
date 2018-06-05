@@ -52,6 +52,12 @@
             if (!isset($_SESSION['admin'])) Tool::alertLocation('请登录','admin_login.php');
         }
 
+        //check email
+        static public function checkEmail($data)
+        {
+            if (!preg_match('/^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/',$data)) return true;
+            return false;
+        }
 
 
     }

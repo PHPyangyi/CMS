@@ -4,44 +4,37 @@
     <meta charset="UTF-8">
     <title>CMS内容管理系统</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="../js/reg.js"></script>
 </head>
 <body>
 {include file='header.html'}
 
 <div id="user">
     <h2>会员信息</h2>
-    <form>
-        <label>用户名：<input type="text" name="username" class="text" /></label>
-        <label>密　码：<input type="password" name="password" class="text" /></label>
-        <label>验证码：<input type="text" name="code" class="text code" /></label>
-        <img src="images/vdimgck.png" alt="验证码" />
-        <p><input type="submit" name="send" value="登录" class="submit" /> <a href="###">注册会员</a> <a href="###">忘记密码?</a></p>
+    {if $data}
+    <div class="a">您好，<strong>{$data}</strong> 欢迎光临</div>
+    <div class="b">
+        <img src="images/{$face}" alt="{$data}" />
+        <a href="###">个人中心</a>
+        <a href="###">我的评论</a>
+        <a href="register.php?action=logout">退出登录</a>
+    </div>
+    {else}
+    <form action="register.php?action=login" method="post" name="login">
+        <label>用户名：<input type="text" name="user" class="text" /></label>
+        <label>密　码：<input type="password" name="pass" class="text" /></label>
+        <label class="yzm">验证码：<input type="text" name="code" class="text code" /> <img src="Conf/code.php"  style="width: 75px;height: 25px;cursor:hand;" onclick="javascript:this.src='Conf/code.php?tm='+Math.random();" class="code" /></label>
+        <p><input type="submit" name="send" value="登录" onclick="return checkLogin();" class="submit" /> <a href="register.php?action=reg">注册会员</a> <a href="###">忘记密码?</a> </p>
     </form>
+    {/if}
     <h3>最近登录会员 <span>────────────</span></h3>
+    {foreach from=$AllLaterUser key=key item=value }
     <dl>
-        <dt><img src="images/01.gif" alt="头像" /></dt>
-        <dd>樱桃小丸子</dd>
+        <dt><img src="images/{$value->face}" alt="头像" /></dt>
+        <dd>{$value->user}</dd>
     </dl>
-    <dl>
-        <dt><img src="images/04.gif" alt="头像" /></dt>
-        <dd>蜡笔小新</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/12.gif" alt="头像" /></dt>
-        <dd>圣斗士星矢</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/17.gif" alt="头像" /></dt>
-        <dd>黑崎一护</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/22.gif" alt="头像" /></dt>
-        <dd>我叫MT</dd>
-    </dl>
-    <dl>
-        <dt><img src="images/14.gif" alt="头像" /></dt>
-        <dd>海贼王路飞</dd>
-    </dl>
+    {/foreach}
+
 </div>
 <div id="news">
     <h3><a href="###">联合利华因散布涨价信息被罚</a></h3>

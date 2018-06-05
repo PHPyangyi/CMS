@@ -501,3 +501,36 @@ h2 {
 #footer p span {
     color:#06f;
 }
+/*22222222222222*/
+#user div.a {
+    width:80%;
+    margin:10px auto;
+    border:1px solid #eee;
+    background:#fffffc;
+    height:22px;
+    line-height:22px;
+    text-align:center;
+    border-right:none;
+    border-left:none;
+}
+#user div.a strong {
+    color:#ff6600;
+}
+#user div.b {
+    width:70%;
+    margin:0 auto;
+    padding:15px 0 0 0;
+    height:85px;
+}
+#user div.b img {
+    display:block;
+    float:left;
+}
+#user div.b a {
+    display:block;
+    float:right;
+    width:80px;
+    padding:8px 0 0 0;
+    color:green;
+    letter-spacing:2px;
+}

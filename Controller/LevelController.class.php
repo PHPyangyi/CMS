@@ -80,7 +80,7 @@
                 $this->model->id = $_POST['id'];
                 $this->model->level_name = $_POST['level_name'];
 
-                if ($this->model->getOneLevel()) Tool::alertBack('警告：此等级名称已有！');
+             //   if ($this->model->getOneLevel()) Tool::alertBack('警告：此等级名称已有！');
 
                 $this->model->level_info = $_POST['level_info'];
                 $this->model->updateLevel() ? Tool::alertLocation('恭喜你，修改等级成功！', 'level.php?action=show') : Tool::alertBack('很遗憾，修改等级失败！');
