@@ -15,8 +15,10 @@
     {foreach  from=$AllListContent key=key item=value  }
     <dl>
         <dt><a href="details.php?id={$value->id}" target="_blank"><img src="{$value->thumbnail}" alt="{$value->title}" /></a></dt>
+
         <dd>[<strong>{$value->nav_name}</strong>] <a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></dd>
-        <dd>日期：{$value->date} 点击率：{$value->count} 好评：0</dd>
+
+        <dd>日期：{$value->date} 点击率：{$value->count} 消耗金币 ：{$value->gold}</dd>
         <dd>核心提示：{$value->info}</dd>
     </dl>
     {/foreach}
@@ -42,39 +44,33 @@
     </div>
 
     <div class="right">
-        <h2>本类推荐</h2>
+        <h2>本月本类推荐</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            {if $MonthNavRec}
+            {foreach from=$MonthNavRec key=key item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title|truncate:48:'...':true}</a></li>
+            {/foreach}
+            {/if}
         </ul>
     </div>
     <div class="right">
-        <h2>本类热点</h2>
+        <h2>本月本类热点</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            {if $MonthNavHot}
+            {foreach from=$MonthNavHot  key=key item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title|truncate:48:'...':true}</a></li>
+            {/foreach}
+            {/if}
         </ul>
     </div>
     <div class="right">
         <h2>本类图文</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            {if $MonthNavPic}
+            {foreach from=$MonthNavPic  key=key item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title|truncate:48:'...':true} </a></li>
+            {/foreach}
+            {/if}
         </ul>
     </div>
 </div>

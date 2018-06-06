@@ -72,19 +72,44 @@
             echo "<script type='text/javascript'>alert('$info');close();</script>";
             exit();
         }
+        //日期转换
+        static public function objDate(&$object,$field)
+        {
+            if ($object) {
+                foreach ($object as $value) {
+                    @$value->$field = date('m-d',strtotime($value->$field));
+                }
+            }
+        }
+
+
+        static public function NewSubStr(&$_object,$_field,$_length,$_encoding)
+        {
+            if ($_object) {
+                if (is_array($_object)) {
+                    foreach ($_object as $_value) {
+                        if (mb_strlen($_value->$_field,$_encoding) > $_length) {
+                            $_value->$_field = mb_substr($_value->$_field,0,$_length,$_encoding).'...';
+                        }
+                    }
+                } else {
+                    return mb_substr($_object,0,$_length,$_encoding);
+                }
+            }
+        }
 
 
         //字符串截取
         static public function subStr($object,$field,$length,$encoding)
         {
             if ($object) {
-                foreach ($object as $value) {
+                foreach (@$object as $value) {
                     if (mb_strlen($value->$field,$encoding) > $length) {
-                        $value->$field = mb_substr($value->$field,0,$length,$encoding).'...';
+                        @$value->$field = mb_substr($value->$field,0,$length,$encoding).'...';
                     }
                 }
             }
-            return $object;
+            return @$object;
         }
 
         //讲html字符串转换成html标签

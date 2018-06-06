@@ -16,6 +16,47 @@
         public function Action ()
         {
             $this->getDetails();
+            $this->NewThreeComment();
+
+        }
+
+
+
+
+
+
+
+        //end....
+
+        private function NewThreeComment()
+        {
+            parent::__construct($this->smarty, new CommentModel());
+
+            $this->model->cid=$_GET['id'];
+
+            $object = $this->model->getNewThreeComment() ;
+
+            if ($object) {
+                foreach ($object as $value) {
+                    switch ($value->manner) {
+                        case -1 :
+                            $value->manner = '反对';
+                            break;
+                        case 0 :
+                            $value->manner = '中立';
+                            break;
+                        case 1 :
+                            $value->manner = '支持';
+                            break;
+                    }
+                    if (empty($value->face)) {
+                        $value->face = '00.gif';
+                    }
+                }
+            }
+
+
+            $this->smarty->assign('NewThreeComment',$object);
         }
 
         private function getDetails()
@@ -46,10 +87,40 @@
                 $this->smarty->assign('yang',$comment->getCommentTotal());
 
 
+
+
+                $this->model->nav = $content->nav;
+
+                $object = $this->model->getMonthNavRec();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavRec',$object);
+
+                $object = $this->model->getMonthNavHot();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavHot',$object);
+
+                $object = $this->model->getMonthNavPic();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavPic',$object);
+
+
+
+
             } else {
                 Tool::alertBack('警告：非法操作！');
             }
         }
+
+
+        private function setObject(&$object)
+        {
+            if ($object) {
+                Tool::NewSubStr($object,'title',16,'utf-8');
+                Tool::objDate($object,'date');
+            }
+        }
+
+
 
         private function getNav($_id)
         {

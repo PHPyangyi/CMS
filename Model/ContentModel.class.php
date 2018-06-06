@@ -38,7 +38,245 @@
         }
 
 
+        //获取每个主栏目所有11条的最新文档
+        public function getNewNavList()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content
+							WHERE
+											nav IN (SELECT id FROM cms_nav WHERE pid='$this->nav')
+						ORDER BY
+											date DESC
+								LIMIT 
+											0,11";
+            return parent::all($sql);
+        }
 
+        //获取最新的10条文档
+        public function getNewList()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content 
+						ORDER BY 
+											date DESC";
+            return parent::all($sql);
+        }
+
+        //获取最新的一条头条
+        public function getNewTop()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											info
+								FROM 
+											cms_content 
+							WHERE 
+											attr LIKE '%头条%' 
+						ORDER BY 
+											date DESC 
+								LIMIT 
+											1";
+            return parent::one($sql);
+        }
+
+        //获取最新的第二条到第五条头条
+        public function getNewTopList()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											info
+								FROM 
+											cms_content 
+							WHERE 
+											attr LIKE '%头条%' 
+						ORDER BY 
+											date DESC 
+								LIMIT 
+											1,4";
+            return parent::all($sql);
+        }
+
+
+        //获取最新的四条图文资讯
+        public function getPicList()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											thumbnail 
+								FROM 
+											cms_content 
+							WHERE 
+											thumbnail<>'' 
+						ORDER BY 
+											date DESC
+								LIMIT
+											0,4";
+            return parent::all($sql);
+        }
+
+
+        //获取本月评论总榜，7条
+        public function getMonthCommentList()
+        {
+            $sql = "SELECT 
+											ct.id,
+											ct.title,
+											ct.date 
+								FROM 
+											cms_content ct
+							 
+						ORDER BY 
+											(SELECT 
+																COUNT(*) 
+													FROM 
+																cms_comment c 
+												WHERE 
+																c.cid=ct.id) DESC
+								LIMIT 
+											0,7";
+            return parent::all($sql);
+        }
+
+
+
+        //获取 热点（点击量），总排行，7条
+        public function getMonthHotList() {
+            $_sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content 
+											 
+						ORDER BY 
+											count DESC
+								LIMIT 
+											0,7";
+            return parent::all($_sql);
+        }
+
+        //获取最新的7条推荐文档
+        public function getNewRecList()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content 
+							WHERE 
+											attr LIKE '%推荐%' 
+						ORDER BY 
+											date DESC 
+								LIMIT 
+											0,7";
+            return parent::all($sql);
+        }
+
+
+
+
+        //获取 本类、推荐排行榜，10条
+        public function getMonthNavRec()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content 
+							WHERE
+											attr LIKE '%推荐%'
+								AND
+											nav IN ($this->nav)	
+						ORDER BY 
+											date DESC 
+								LIMIT 
+											0,10";
+            return parent::all($sql);
+        }
+
+
+
+        //获取  本类、热点荐排行榜，10条
+        public function getMonthNavHot()
+        {
+            $sql = "SELECT 
+											ct.id,
+											ct.title,
+											ct.date 
+								FROM 
+											cms_content ct
+							WHERE
+										 
+											ct.nav IN ($this->nav)	
+						ORDER BY 
+											(SELECT 
+																COUNT(*) 
+													FROM 
+																cms_comment c 
+												WHERE 
+																c.cid=ct.id) DESC
+								LIMIT 
+											0,10";
+            return parent::all($sql);
+        }
+
+
+
+
+        //获取 本类、图文排行榜，10条
+        public function getMonthNavPic()
+        {
+            $sql = "SELECT 
+											id,
+											title,
+											date 
+								FROM 
+											cms_content 
+							WHERE
+											thumbnail<>''
+							 
+								AND
+											nav IN ($this->nav)	
+						ORDER BY 
+											date DESC 
+								LIMIT 
+											0,10";
+            return parent::all($sql);
+        }
+
+
+        //获取总排行榜，文档的评论量从大到小，20条
+        public function getHotTwentyComment()
+        {
+            $sql = "SELECT 
+											ct.id,
+											ct.title 
+								FROM 
+											cms_content ct
+						ORDER BY
+											(SELECT 
+																COUNT(*) 
+													FROM 
+																cms_comment c 
+												WHERE 
+																c.cid=ct.id) DESC
+								LIMIT 
+											0,20";
+            return parent::all($sql);
+        }
 
         //获取主类下的子类的id
 //        public function getNavChildId()
@@ -75,22 +313,24 @@
             $sql = "SELECT 
 											c.id,
 											c.title,
+											c.nav,
+											c.title t,
+											c.attr,
 											c.date,
 											c.info,
+											c.gold,
 											c.thumbnail,
 											c.count,
-											n.nav_name, 
-											attr
+											n.nav_name 
 								FROM 
-										    cms_content c,
+											cms_content c,
 											cms_nav n
 								WHERE
 											c.nav=n.id
-								AND
+									AND
 											c.nav IN ($this->nav)
-								ORDER BY 
-								            c.date DESC 			
-											
+							ORDER BY
+											c.date DESC
 										$this->limit";
             return parent::all($sql);
         }

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-05 15:04:23
+<?php /* Smarty version 2.6.31, created on 2018-06-06 15:57:37
          compiled from index.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +7,88 @@
     <title>CMS内容管理系统</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="../js/reg.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+
+    <?php echo '
+    <style type="text/css">
+
+        #banner { position: relative; width: 268px; 	height:190px;; border: 1px solid #666; overflow: hidden; }
+
+        #banner_list img { border: 0px; }
+
+        #banner_bg { position: absolute; bottom: 0; background-color: #000; height: 30px; filter: Alpha(Opacity=30); opacity: 0.3; z-index: 1000; cursor: pointer; width: 478px; }
+
+        #banner_info { position: absolute; bottom: 0; left: 5px; height: 22px; color: #fff; z-index: 1001; cursor: pointer }
+
+        #banner_text { position: absolute; width: 120px; z-index: 1002; right: 3px; bottom: 3px; }
+
+        #banner ul { position: absolute; list-style-type: none; filter: Alpha(Opacity=80); opacity: 0.8; z-index: 1002; margin: 0; padding: 0; bottom: 3px; right: 5px; }
+
+        #banner ul li { padding: 0px 8px; float: left; display: block; color: #FFF; background: #6f4f67; cursor: pointer; border: 1px solid #333; }
+
+        #banner ul li.on { background-color: #000; }
+
+        #banner_list a { position: absolute; }
+
+    </style>
+
+    <script type="text/javascript">
+
+        var t = n =0, count;
+
+        $(document).ready(function(){
+
+            count=$("#banner_list a").length;
+
+            $("#banner_list a:not(:first-child)").hide();
+
+            $("#banner_info").html($("#banner_list a:first-child").find("img").attr(\'alt\'));
+
+            $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr(\'href\'), "_blank")});
+
+            $("#banner li").click(function() {
+
+                var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
+
+                n = i;
+
+                if (i >= count) return;
+
+                $("#banner_info").html($("#banner_list a").eq(i).find("img").attr(\'alt\'));
+
+                $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr(\'href\'), "_blank")})
+
+                $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+
+                document.getElementById("banner").style.background="";
+
+                $(this).toggleClass("on");
+
+                $(this).siblings().removeAttr("class");
+
+            });
+
+            t = setInterval("showAuto()", 4000);
+
+            $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+
+        })
+
+
+
+        function showAuto()
+
+        {
+
+            n = n >=(count -1) ?0 : ++n;
+
+            $("#banner li").eq(n).trigger(\'click\');
+
+        }
+
+    </script>
+    '; ?>
+
 </head>
 <body>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
@@ -50,40 +132,83 @@ unset($_smarty_tpl_vars);
 
 </div>
 <div id="news">
-    <h3><a href="###">联合利华因散布涨价信息被罚</a></h3>
-    <p>核心提示：国家发改委发布公告称，3月下旬，联合利华(中国)有限公司有关负责人多次接受采访发表日化产品涨价言论。此行为导致日化产品涨价的信息广泛传播，增强了消费者涨价预...<a href="###">[查看全文]</a></p>
+    <h3><a href="details.php?id=<?php echo $this->_tpl_vars['TopId']; ?>
+" target="_blank"><?php echo $this->_tpl_vars['TopTitle']; ?>
+</a></h3>
+    <p>核心提示：<?php echo $this->_tpl_vars['TopInfo']; ?>
+<a href="details.php?id=<?php echo $this->_tpl_vars['TopId']; ?>
+" target="_blank">[查看全文]</a></p>
     <p class="link">
-        <a href="###">优酷计划通过增发再融6亿美元</a> |
-        <a href="###">网秦上市次日收盘大跌9.68%</a>
-        <a href="###">电子书市场遭遇优质内容缺失之困</a> |
-        <a href="###">人人IPO次日收盘下跌6％</a>
+        <?php if ($this->_tpl_vars['NewTopList']): ?>
+        <?php $_from = $this->_tpl_vars['NewTopList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a> <?php echo $this->_tpl_vars['value']->line; ?>
+
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
     </p>
     <ul>
-        <li><em>11-06-04</em><a href="###">报告预计2011年全球3D电视出货量同比增500%...</a></li>
-        <li><em>11-05-03</em><a href="###">58同城获日本分类信息公司Recruit战略...</a></li>
-        <li><em>11-06-04</em><a href="###">DisplaySearch：全球3D电视销量将达22OO万台..</a></li>
-        <li><em>11-04-08</em><a href="###">前程无忧一季度净利1400万美元 同比增81.6%...</a></li>
-        <li><em>11-08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-        <li><em>11-11-18</em><a href="###">优酷来自手机及平板电脑播放量已占整站10%...</a></li>
-        <li><em>11-06-12</em><a href="###">报告称Android一季度在美市场份额扩至34.7%...</a></li>
-        <li><em>11-12-11</em><a href="###">阿尔卡特朗讯2011第一财季营收同比增15%...</a></li>
-        <li><em>11-01-09</em><a href="###">HTC第一季度智能手机销量970万 年成长率192% ...</a></li>
-        <li><em>11-04-07</em><a href="###">一季度苹果占全球智能机份额升至18.7%居次席会...</a></li>
+        <?php if ($this->_tpl_vars['NewList']): ?>
+        <?php $_from = $this->_tpl_vars['NewList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></li>
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
     </ul>
 </div>
 <div id="pic">
-    <img src="images/adverleft.png" alt="新闻图片" />
+
+
+    <div id="banner">
+
+
+        <ul>
+            <?php $_from = $this->_tpl_vars['yang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li class="on"><?php echo $this->_tpl_vars['key']+1; ?>
+</li>
+            <?php endforeach; endif; unset($_from); ?>
+        </ul>
+
+        <div id="banner_list">
+
+            <?php $_from = $this->_tpl_vars['yang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <a href="<?php echo $this->_tpl_vars['value']->link; ?>
+" target="_blank"><img src="<?php echo $this->_tpl_vars['value']->thumbnail; ?>
+" title="<?php echo $this->_tpl_vars['value']->title; ?>
+" alt="images"/></a>
+            <?php endforeach; endif; unset($_from); ?>
+
+        </div>
+
+    </div>
+
+
+
 </div>
 <div id="rec">
     <h2>特别推荐</h2>
     <ul>
-        <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-        <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-        <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-        <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-        <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-        <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-        <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10天...</a></li>
+        <?php if ($this->_tpl_vars['NewRecList']): ?>
+        <?php $_from = $this->_tpl_vars['NewRecList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></li>
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
     </ul>
 </div>
 <div id="sidebar-right">
@@ -91,25 +216,31 @@ unset($_smarty_tpl_vars);
     <div class="hot">
         <h2>本月热点</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10天...</a></li>
+            <?php if ($this->_tpl_vars['MonthHotList']): ?>
+            <?php $_from = $this->_tpl_vars['MonthHotList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></li>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
         </ul>
     </div>
     <div class="comm">
         <h2>本月评论</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10天...</a></li>
+            <?php if ($this->_tpl_vars['MonthCommentList']): ?>
+            <?php $_from = $this->_tpl_vars['MonthCommentList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></li>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
         </ul>
     </div>
     <div class="vote">
@@ -126,88 +257,52 @@ unset($_smarty_tpl_vars);
 </div>
 <div id="picnews">
     <h2>图文资讯</h2>
+    <?php if ($this->_tpl_vars['PicList']): ?>
+    <?php $_from = $this->_tpl_vars['PicList']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
     <dl>
-        <dt><a href="###"><img src="images/pic1.png" alt="标题" /></a></dt>
-        <dd><a href="###">以色列总理出访法国 士兵在迎接仪式上晕倒</a></dd>
+        <dt><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><img src="<?php echo $this->_tpl_vars['value']->thumbnail; ?>
+" alt="<?php echo $this->_tpl_vars['value']->title; ?>
+" /></a></dt>
+        <dd><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['value']->title; ?>
+</a></dd>
     </dl>
-    <dl>
-        <dt><a href="###"><img src="images/pic2.png" alt="标题" /></a></dt>
-        <dd><a href="###">江西数百学生操场上给母亲洗脚</a></dd>
-    </dl>
-    <dl>
-        <dt><a href="###"><img src="images/pic3.png" alt="标题" /></a></dt>
-        <dd><a href="###">歼20照片再现 地勤人员钻入起落架舱</a></dd>
-    </dl>
-    <dl>
-        <dt><a href="###"><img src="images/pic4.png" alt="标题" /></a></dt>
-        <dd><a href="###">摄影师拍“水下工程” 波浪如蘑菇云</a></dd>
-    </dl>
+    <?php endforeach; endif; unset($_from); ?>
+    <?php endif; ?>
 </div>
-<div id="newslist">
-    <div class="list bottom">
-        <h2><a href="###">更多</a>军事动态</h2>
+
+<div id="newslist" style="height: auto;">
+
+    <?php if ($this->_tpl_vars['FourNav']): ?>
+    <?php $_from = $this->_tpl_vars['FourNav']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+    <div class="<?php echo $this->_tpl_vars['value']->class; ?>
+">
+        <h2><a href="list.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank">更多</a><?php echo $this->_tpl_vars['value']->nav_name; ?>
+</h2>
         <ul>
-            <li><em>06-04</em><a href="###">报告预计2011年全球3D电视出货量同比增500%...</a></li>
-            <li><em>05-03</em><a href="###">58同城获日本分类信息公司Recruit战略...</a></li>
-            <li><em>06-04</em><a href="###">DisplaySearch：全球3D电视销量将达22OO万台..</a></li>
-            <li><em>04-08</em><a href="###">前程无忧一季度净利1400万美元 同比增81.6%...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-            <li><em>11-18</em><a href="###">优酷来自手机及平板电脑播放量已占整站10%...</a></li>
-            <li><em>06-12</em><a href="###">报告称Android一季度在美市场份额扩至34.7%...</a></li>
-            <li><em>12-11</em><a href="###">阿尔卡特朗讯2011第一财季营收同比增15%...</a></li>
-            <li><em>01-09</em><a href="###">HTC第一季度智能手机销量970万 年成长192% ...</a></li>
-            <li><em>04-07</em><a href="###">一季度苹果占全球智能机份额升至18.7%席会...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
+
+            <?php $_from = $this->_tpl_vars['value']->list; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['item']):
+?>
+            <li><em><?php echo $this->_tpl_vars['item']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['item']->id; ?>
+" target="_blank"><?php echo $this->_tpl_vars['item']->title; ?>
+</a></li>
+            <?php endforeach; else: ?>
+                <div style="text-align: center">暂无任何数据 </div>
+            <?php endif; unset($_from); ?>
         </ul>
     </div>
-    <div class="list right bottom">
-        <h2><a href="###">更多</a>八卦娱乐</h2>
-        <ul>
-            <li><em>06-04</em><a href="###">报告预计2011年全球3D电视出货量同比增500%...</a></li>
-            <li><em>05-03</em><a href="###">58同城获日本分类信息公司Recruit战略...</a></li>
-            <li><em>06-04</em><a href="###">DisplaySearch：全球3D电视销量将达22OO万台..</a></li>
-            <li><em>04-08</em><a href="###">前程无忧一季度净利1400万美元 同比增81.6%...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-            <li><em>11-18</em><a href="###">优酷来自手机及平板电脑播放量已占整站10%...</a></li>
-            <li><em>06-12</em><a href="###">报告称Android一季度在美市场份额扩至34.7%...</a></li>
-            <li><em>12-11</em><a href="###">阿尔卡特朗讯2011第一财季营收同比增15%...</a></li>
-            <li><em>01-09</em><a href="###">HTC第一季度智能手机销量970万 年成长192% ...</a></li>
-            <li><em>04-07</em><a href="###">一季度苹果占全球智能机份额升至18.7%席会...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-        </ul>
-    </div>
-    <div class="list">
-        <h2><a href="###">更多</a>时尚女人</h2>
-        <ul>
-            <li><em>06-04</em><a href="###">报告预计2011年全球3D电视出货量同比增500%...</a></li>
-            <li><em>05-03</em><a href="###">58同城获日本分类信息公司Recruit战略...</a></li>
-            <li><em>06-04</em><a href="###">DisplaySearch：全球3D电视销量将达22OO万台..</a></li>
-            <li><em>04-08</em><a href="###">前程无忧一季度净利1400万美元 同比增81.6%...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-            <li><em>11-18</em><a href="###">优酷来自手机及平板电脑播放量已占整站10%...</a></li>
-            <li><em>06-12</em><a href="###">报告称Android一季度在美市场份额扩至34.7%...</a></li>
-            <li><em>12-11</em><a href="###">阿尔卡特朗讯2011第一财季营收同比增15%...</a></li>
-            <li><em>01-09</em><a href="###">HTC第一季度智能手机销量970万 年成长192% ...</a></li>
-            <li><em>04-07</em><a href="###">一季度苹果占全球智能机份额升至18.7%席会...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-        </ul>
-    </div>
-    <div class="list right">
-        <h2><a href="###">更多</a>科技频道</h2>
-        <ul>
-            <li><em>06-04</em><a href="###">报告预计2011年全球3D电视出货量同比增500%...</a></li>
-            <li><em>05-03</em><a href="###">58同城获日本分类信息公司Recruit战略...</a></li>
-            <li><em>06-04</em><a href="###">DisplaySearch：全球3D电视销量将达22OO万台..</a></li>
-            <li><em>04-08</em><a href="###">前程无忧一季度净利1400万美元 同比增81.6%...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-            <li><em>11-18</em><a href="###">优酷来自手机及平板电脑播放量已占整站10%...</a></li>
-            <li><em>06-12</em><a href="###">报告称Android一季度在美市场份额扩至34.7%...</a></li>
-            <li><em>12-11</em><a href="###">阿尔卡特朗讯2011第一财季营收同比增15%...</a></li>
-            <li><em>01-09</em><a href="###">HTC第一季度智能手机销量970万 年成长192% ...</a></li>
-            <li><em>04-07</em><a href="###">一季度苹果占全球智能机份额升至18.7%席会...</a></li>
-            <li><em>08-04</em><a href="###">人人上市次日早盘大跌9%报16.39美元...</a></li>
-        </ul>
-    </div>
+    <?php endforeach; endif; unset($_from); ?>
+    <?php endif; ?>
+
+
 </div>
 
 <?php $_smarty_tpl_vars = $this->_tpl_vars;

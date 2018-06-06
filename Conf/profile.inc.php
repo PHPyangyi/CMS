@@ -25,3 +25,5 @@
 
     define('UPDIR','/uploads/');											//上传主目录
     define('ARTICLE_SIZE',8);												//文档每页多少条
+
+    define('RO_NUM',4);                                                     //轮播图个数

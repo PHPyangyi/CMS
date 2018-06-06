@@ -7,6 +7,7 @@
      */
 
     require dirname(__FILE__) . '/init.inc.php';
+    error_reporting(E_ALL& ~ E_WARNING   );
 
     global $smarty;
     $nav=new NavController($smarty);

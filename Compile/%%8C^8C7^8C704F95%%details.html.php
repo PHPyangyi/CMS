@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 04:01:40
+<?php /* Smarty version 2.6.31, created on 2018-06-06 14:43:00
          compiled from details.html */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'details.html', 68, false),)), $this); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,14 +33,48 @@ unset($_smarty_tpl_vars);
     <div class="d4">TAB标签：<?php echo $this->_tpl_vars['tag']; ?>
 </div>
 
-    <div class="d5">
+
 
         <div class="d6">
             <h2><a href="feedback.php?cid=<?php echo $this->_tpl_vars['id']; ?>
 " target="_blank">已有<span><?php echo $this->_tpl_vars['yang']; ?>
 </span>人参与评论</a>最新评论</h2>
+            <?php if ($this->_tpl_vars['NewThreeComment']): ?>
+
+            <?php $_from = $this->_tpl_vars['NewThreeComment']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <dl>
+                <dt><img src="images/<?php echo $this->_tpl_vars['value']->face; ?>
+" alt="<?php echo $this->_tpl_vars['value']->user; ?>
+" /></dt>
+                <dd><em><?php echo $this->_tpl_vars['value']->date; ?>
+ 发表</em><span>[<?php echo $this->_tpl_vars['value']->user; ?>
+]</span></dd>
+                <dd class="info">[<?php echo $this->_tpl_vars['value']->manner; ?>
+]<?php echo $this->_tpl_vars['value']->content; ?>
+</dd>
+                <dd class="bottom"><a href="feedback.php?cid=<?php echo $this->_tpl_vars['value']->cid; ?>
+&id=<?php echo $this->_tpl_vars['value']->id; ?>
+&type=sustain" target="_blank">[<?php echo $this->_tpl_vars['value']->sustain; ?>
+]支持</a> <a href="feedback.php?cid=<?php echo $this->_tpl_vars['value']->cid; ?>
+&id=<?php echo $this->_tpl_vars['value']->id; ?>
+&type=oppose"  target="_blank">[<?php echo $this->_tpl_vars['value']->oppose; ?>
+]反对</a></dd>
+            </dl>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php else: ?>
+            <dl>
+                <dd style="text-align: center">此文档下没有任何评论！</dd>
+            </dl>
+            <?php endif; ?>
+
+
         </div>
 
+
+
+    <div class="d5">
         <form method="post" action="feedback.php?cid=<?php echo $this->_tpl_vars['id']; ?>
 " >
             <p>你对本文的态度：<input type="radio" name="manner" value="1" checked="checked" /> 支持
@@ -54,42 +90,53 @@ unset($_smarty_tpl_vars);
             </p>
         </form>
     </div>
+
 </div>
+
 <div id="sidebar">
     <div class="right">
-        <h2>本类推荐</h2>
+        <h2>本月本类推荐</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            <?php if ($this->_tpl_vars['MonthNavRec']): ?>
+            <?php $_from = $this->_tpl_vars['MonthNavRec']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo ((is_array($_tmp=$this->_tpl_vars['value']->title)) ? $this->_run_mod_handler('truncate', true, $_tmp, 48, '...', true) : smarty_modifier_truncate($_tmp, 48, '...', true)); ?>
+</a></li>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
         </ul>
     </div>
     <div class="right">
-        <h2>本类热点</h2>
+        <h2>本月本类热点</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            <?php if ($this->_tpl_vars['MonthNavHot']): ?>
+            <?php $_from = $this->_tpl_vars['MonthNavHot']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo ((is_array($_tmp=$this->_tpl_vars['value']->title)) ? $this->_run_mod_handler('truncate', true, $_tmp, 48, '...', true) : smarty_modifier_truncate($_tmp, 48, '...', true)); ?>
+</a></li>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
         </ul>
     </div>
     <div class="right">
         <h2>本类图文</h2>
         <ul>
-            <li><em>06-20</em><a href="###">银监会否认首套房贷首付将提至...</a></li>
-            <li><em>04-02</em><a href="###">发改委曝房价违规开发商名单央...</a></li>
-            <li><em>02-13</em><a href="###">社科院预测更严厉楼市政策年内...</a></li>
-            <li><em>05-05</em><a href="###">比亚迪拟“缩水”回归A股 以缓解...</a></li>
-            <li><em>07-11</em><a href="###">第一线：北京限制高价盘预售证...</a></li>
-            <li><em>03-18</em><a href="###">电网主辅分离或年内完成 葛洲坝...</a></li>
-            <li><em>05-02</em><a href="###">京沪高铁将于6月9日起试运行10...</a></li>
+            <?php if ($this->_tpl_vars['MonthNavPic']): ?>
+            <?php $_from = $this->_tpl_vars['MonthNavPic']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <li><em><?php echo $this->_tpl_vars['value']->date; ?>
+</em><a href="details.php?id=<?php echo $this->_tpl_vars['value']->id; ?>
+" target="_blank"><?php echo ((is_array($_tmp=$this->_tpl_vars['value']->title)) ? $this->_run_mod_handler('truncate', true, $_tmp, 48, '...', true) : smarty_modifier_truncate($_tmp, 48, '...', true)); ?>
+ </a></li>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
         </ul>
     </div>
 </div>

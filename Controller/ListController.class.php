@@ -41,12 +41,44 @@
 
                 $object = Tool::subStr($object,'info',120,'utf-8');
                 $object = Tool::subStr($object,'title',35,'utf-8');
-
+                if ($object) {
+                    foreach ($object as $value) {
+                        if (empty($value->thumbnail)) $value->thumbnail = 'images/none.jpg';
+                    }
+                }
                 $this->smarty->assign('AllListContent',$object);
+
+
+
+                $object = $this->model->getMonthNavRec();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavRec',$object);
+
+                $object = $this->model->getMonthNavHot();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavHot',$object);
+
+                $object = $this->model->getMonthNavPic();
+                $this->setObject($object);
+                $this->smarty->assign('MonthNavPic',$object);
+
+
+
+
             } else {
                 Tool::alertBack('警告：非法操作！');
             }
         }
+
+
+        private function setObject(&$object)
+        {
+            if ($object) {
+                Tool::NewSubStr($object,'title',16,'utf-8');
+                Tool::objDate($object,'date');
+            }
+        }
+
 
         //显示导航
         private function getNav() {

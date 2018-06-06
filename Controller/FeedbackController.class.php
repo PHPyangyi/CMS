@@ -50,6 +50,8 @@
                 $this->model->addComment() ? Tool::alertLocation('评论添加成功，请等待管理员审核！','feedback.php?cid='.$this->model->cid) : Tool::alertLocation('评论添加失败，请重新添加！','feedback.php?cid='.$this->model->cid);
             }
         }
+
+
         private function showComment ()
         {
             if ($_GET['cid']) {
@@ -62,30 +64,24 @@
 
 
                 parent::page($this->model->getCommentTotal());
+
                 $object = $this->model->getAllComment();
-                if ($object) {
-                    foreach ($object as $value) {
-                        switch ($value->manner) {
-                            case -1 :
-                                $value->manner = '反对';
-                                break;
-                            case 0 :
-                                $value->manner = '中立';
-                                break;
-                            case 1 :
-                                $value->manner = '支持';
-                                break;
-                        }
-                        if (empty($value->face)) {
-                            $value->face = '00.gif';
-                        }
-                    }
-                }
+
+                $object2 = $this->model->getHotThreeComment();
+
+                $object3 = $content ->getHotTwentyComment();
+
+                $this->setObject($object);
+                $this->setObject($object2);
+
+
                 $this->smarty->assign('titlec',$content->getOneContent()->title);
                 $this->smarty->assign('info',$content->getOneContent()->info);
                 $this->smarty->assign('id',$content->getOneContent()->id);
                 $this->smarty->assign('cid',$this->model->cid);
                 $this->smarty->assign('AllComment',$object);
+                $this->smarty->assign('HotThreeComment',$object2);
+                $this->smarty->assign('HotTwentyComment',$object3);
             } else {
                 Tool::alertBack('警告：非法操作！');
             }
@@ -104,6 +100,31 @@
                 }
                 if ($_GET['type'] == 'oppose') {
                     $this->model->setOppose() ? Tool::alertLocation('反对成功！','feedback.php?cid='.$_GET['cid']) : Tool::alertLocation('反对失败！','feedback.php?cid='.$_GET['cid']);
+                }
+            }
+        }
+
+        private function  setObject(&$object)
+        {
+            if ($object) {
+                foreach ($object as $value) {
+                    switch ($value->manner) {
+                        case -1 :
+                            $value->manner = '反对';
+                            break;
+                        case 0 :
+                            $value->manner = '中立';
+                            break;
+                        case 1 :
+                            $value->manner = '支持';
+                            break;
+                    }
+                    if (empty($value->face)) {
+                        $value->face = '00.gif';
+                    }
+                    if (!empty($value->oppose)) {
+                        $value->oppose = '-'.$value->oppose;
+                    }
                 }
             }
         }
