@@ -30,7 +30,7 @@
                 $content = $this->model->getOneContent();
 
 
-
+                $this->smarty->assign('id',$content->id);
                 $this->smarty->assign('titlec',$content->title);
                 $this->smarty->assign('count',$content->count);
                 $this->smarty->assign('date',$content->date);
@@ -38,7 +38,14 @@
                 $this->smarty->assign('author',$content->author);
                 $this->smarty->assign('info',$content->info);
                 $this->smarty->assign('content',Tool::unHtml($content->content));
+                $this->smarty->assign('tag',$content->tag);
                 $this->getNav($content->nav);
+
+                $comment = new CommentModel();
+                $comment->cid = $this->model->id;
+                $this->smarty->assign('yang',$comment->getCommentTotal());
+
+
             } else {
                 Tool::alertBack('警告：非法操作！');
             }

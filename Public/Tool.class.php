@@ -66,6 +66,12 @@
             echo "<script type='text/javascript'>window.close();</script>";
             exit();
         }
+        //弹窗关闭
+        static public function alertClose($info)
+        {
+            echo "<script type='text/javascript'>alert('$info');close();</script>";
+            exit();
+        }
 
 
         //字符串截取

@@ -1,3 +1,5 @@
+<?php /* Smarty version 2.6.31, created on 2018-06-06 04:01:40
+         compiled from details.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +9,38 @@
     <link rel="stylesheet" type="text/css" href="css/details.css" />
 </head>
 <body>
-{include file='header.html'}
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => 'header.html', 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
 <div id="details">
-    <h2>当前位置 &gt; {$nav}</h2>
-    <h3>{$titlec}</h3>
-    <div class="d1">时间：{$date} 来源：{$source} 作者：{$author} 点击量：{$count}</div>
-    <div class="d2">{$info}</div>
-    <div class="d3">{$content}</div>
-    <div class="d4">TAB标签：{$tag}</div>
+    <h2>当前位置 &gt; <?php echo $this->_tpl_vars['nav']; ?>
+</h2>
+    <h3><?php echo $this->_tpl_vars['titlec']; ?>
+</h3>
+    <div class="d1">时间：<?php echo $this->_tpl_vars['date']; ?>
+ 来源：<?php echo $this->_tpl_vars['source']; ?>
+ 作者：<?php echo $this->_tpl_vars['author']; ?>
+ 点击量：<?php echo $this->_tpl_vars['count']; ?>
+</div>
+    <div class="d2"><?php echo $this->_tpl_vars['info']; ?>
+</div>
+    <div class="d3"><?php echo $this->_tpl_vars['content']; ?>
+</div>
+    <div class="d4">TAB标签：<?php echo $this->_tpl_vars['tag']; ?>
+</div>
 
     <div class="d5">
 
         <div class="d6">
-            <h2><a href="feedback.php?cid={$id}" target="_blank">已有<span>{$yang}</span>人参与评论</a>最新评论</h2>
+            <h2><a href="feedback.php?cid=<?php echo $this->_tpl_vars['id']; ?>
+" target="_blank">已有<span><?php echo $this->_tpl_vars['yang']; ?>
+</span>人参与评论</a>最新评论</h2>
         </div>
 
-        <form method="post" action="feedback.php?cid={$id}" >
+        <form method="post" action="feedback.php?cid=<?php echo $this->_tpl_vars['id']; ?>
+" >
             <p>你对本文的态度：<input type="radio" name="manner" value="1" checked="checked" /> 支持
                 <input type="radio" name="manner" value="0" /> 中立
                 <input type="radio" name="manner" value="-1" /> 反对
@@ -75,6 +93,10 @@
         </ul>
     </div>
 </div>
-{include file='footer.html'}
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => 'footer.html', 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
 </body>
 </html>
