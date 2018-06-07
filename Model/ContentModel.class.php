@@ -38,6 +38,139 @@
             return $this->$name;
         }
 
+        //按照搜索tag标签的文档总记录
+        public function searchTagContentTotal()
+        {
+            $sql = "SELECT 
+										COUNT(*) 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.tag LIKE '%$this->inputkeyword%'";
+            return parent::total($sql);
+        }
+
+        //获取按照Tag搜索的文档列表
+        public function searchTagContent()
+        {
+            $sql = "SELECT 
+											c.id,
+											c.title,
+											c.nav,
+											c.title t,
+											c.attr,
+											c.date,
+											c.keyword,
+											c.info,
+											c.gold,
+											c.thumbnail,
+											c.count,
+											n.nav_name 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.tag LIKE '%$this->inputkeyword%'
+							ORDER BY
+											c.date DESC
+										$this->limit";
+            return parent::all($sql);
+        }
+
+        //按照搜索关键字的文档总记录
+        public function searchKeywordContentTotal()
+        {
+            $sql = "SELECT 
+										COUNT(*) 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.keyword LIKE '%$this->inputkeyword%'";
+            return parent::total($sql);
+        }
+
+        //获取按照关键字搜索的文档列表
+        public function searchKeywordContent()
+        {
+            $sql = "SELECT 
+											c.id,
+											c.title,
+											c.nav,
+											c.title t,
+											c.attr,
+											c.date,
+											c.keyword,
+											c.info,
+											c.gold,
+											c.thumbnail,
+											c.count,
+											n.nav_name 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.keyword LIKE '%$this->inputkeyword%'
+							ORDER BY
+											c.date DESC
+										$this->limit";
+            return parent::all($sql);
+        }
+
+        //按照搜索标题的文档总记录
+        public function searchTitleContentTotal()
+        {
+            $sql = "SELECT 
+										COUNT(*) 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.title LIKE '%$this->inputkeyword%'";
+            return parent::total($sql);
+        }
+
+        //获取按照标题搜索的文档列表
+        public function searchTitleContent()
+        {
+            $sql = "SELECT 
+											c.id,
+											c.title,
+											c.nav,
+											c.title t,
+											c.attr,
+											c.date,
+											c.keyword,
+											c.info,
+											c.gold,
+											c.thumbnail,
+											c.count,
+											n.nav_name 
+								FROM 
+											cms_content c,
+											cms_nav n
+								WHERE
+											c.nav=n.id
+									AND
+											c.title LIKE '%$this->inputkeyword%'
+							ORDER BY
+											c.date DESC
+										$this->limit";
+            return parent::all($sql);
+        }
+
+
         //获取每个主栏目所有11条的最新文档
         public function getNewNavList()
         {

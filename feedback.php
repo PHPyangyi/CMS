@@ -14,6 +14,15 @@
     $nav=new NavController($smarty);
     $nav->showfront();   //display nav
 
+
+    $link = new FriendLinkController($smarty);
+    $link->index();
+
+    $tag = new TagController($smarty);
+    $tag->getFiveTag();
+
+    $smarty->assign('webname',WEBNAME);
+
     $feedback = new FeedBackController($smarty);
     $feedback->Action();
     $smarty->display('feedback.html');

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-07 07:14:56
+<?php /* Smarty version 2.6.31, created on 2018-06-07 10:28:36
          compiled from vote.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@
 
 <?php if ($this->_tpl_vars['show']): ?>
 <table cellspacing="0">
-    <tr><th>编号</th><th>投票主题</th><th>投票项目</th><th>是否前台首选</th><th>操作</th></tr>
+    <tr><th>编号</th><th>投票主题</th><th>投票项目</th><th>是否前台首选</th><th>参与人数</th><th>操作</th></tr>
     <?php if ($this->_tpl_vars['AllVote']): ?>
     <?php $_from = $this->_tpl_vars['AllVote']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
@@ -48,6 +48,8 @@
 ">查看</a> | <a href="vote.php?action=addchild&id=<?php echo $this->_tpl_vars['value']->id; ?>
 ">增加项目</a></td>
         <td><?php echo $this->_tpl_vars['value']->state; ?>
+</td>
+        <td><?php echo $this->_tpl_vars['value']->pcount; ?>
 </td>
         <td><a href="vote.php?action=update&id=<?php echo $this->_tpl_vars['value']->id; ?>
 ">修改</a> | <a href="vote.php?action=delete&id=<?php echo $this->_tpl_vars['value']->id; ?>
@@ -66,7 +68,7 @@
 
 <?php if ($this->_tpl_vars['showchild']): ?>
 <table cellspacing="0">
-    <tr><th>编号</th><th>投票项目</th><th>操作</th></tr>
+    <tr><th>编号</th><th>投票项目</th><th>得票数</th><th>操作</th></tr>
     <?php if ($this->_tpl_vars['AllChildVote']): ?>
     <?php $_from = $this->_tpl_vars['AllChildVote']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
@@ -75,6 +77,8 @@
         <td><?php echo $this->_tpl_vars['key']+$this->_tpl_vars['num']+1; ?>
 </td>
         <td><?php echo $this->_tpl_vars['value']->title; ?>
+</td>
+        <td><?php echo $this->_tpl_vars['value']->count; ?>
 </td>
         <td><a href="vote.php?action=update&id=<?php echo $this->_tpl_vars['value']->id; ?>
 ">修改</a> | <a href="vote.php?action=delete&id=<?php echo $this->_tpl_vars['value']->id; ?>

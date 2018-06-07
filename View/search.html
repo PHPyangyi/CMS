@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$webname}</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+</head>
+<body>
+{include file='header.html'}
+<div id="list">
+    <h2>当前位置 &gt; 搜索</h2>
+    {if $SearchContent}
+    {foreach from=$SearchContent  key=key item=value}
+    <dl>
+        <dt><a href="details.php?id={$value->id}" target="_blank"><img src="{$value->thumbnail}" alt="{$value->t}" /></a></dt>
+        <dd>[<strong>{$value->nav_name}</strong>] <a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></dd>
+        <dd>日期：{$value->date} 点击率：{$value->count} 消费金币：{$value->gold}</dd>
+        <dd>核心提示：{$value->info}</dd>
+    </dl>
+    {/foreach}
+    {else}
+    <p class="none">没有任何数据</p>
+    {/if}
+    <div id="page">{$page}</div>
+</div>
+<div id="sidebar">
+    <div class="right">
+        <h2>本月总推荐</h2>
+        <ul>
+            {if $MonthNavRec}
+            {foreach from=$MonthNavRec   key=key item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></li>
+            {/foreach}
+            {/if}
+        </ul>
+    </div>
+    <div class="right">
+        <h2>本月总热点</h2>
+        <ul>
+            {if $MonthNavHot}
+            {foreach from=$MonthNavHot  key=key item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></li>
+            {/foreach}
+            {/if}
+        </ul>
+    </div>
+    <div class="right">
+        <h2>本月总图文</h2>
+        <ul>
+            {if $MonthNavPic}
+            {foreach from=$MonthNavPic  key=key  item=value}
+            <li><em>{$value->date}</em><a href="details.php?id={$value->id}" target="_blank">{$value->title}</a></li>
+            {/foreach}
+            {/if}
+        </ul>
+    </div>
+</div>
+{include file='footer.html'}
+
+</body>
+</html>

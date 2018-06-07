@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 14:43:00
+<?php /* Smarty version 2.6.31, created on 2018-06-07 14:52:08
          compiled from details.html */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'details.html', 68, false),)), $this); ?>
@@ -6,7 +6,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CMS内容管理系统</title>
+    <title><?php echo $this->_tpl_vars['webname']; ?>
+</title>
     <link rel="stylesheet" type="text/css" href="css/basic.css" />
     <link rel="stylesheet" type="text/css" href="css/details.css" />
 </head>

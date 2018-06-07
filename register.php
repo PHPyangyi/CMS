@@ -11,6 +11,14 @@
     $nav=new NavController($smarty);
     $nav->showfront();   //display nav
 
+    $link = new FriendLinkController($smarty);
+    $link->index();
+
+    $tag = new TagController($smarty);
+    $tag->getFiveTag();
+
+    $smarty->assign('webname',WEBNAME);
+
     $register = new RegisterController($smarty);
     $register->Action();
 

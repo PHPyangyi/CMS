@@ -1,10 +1,11 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-07 07:23:23
+<?php /* Smarty version 2.6.31, created on 2018-06-07 14:28:23
          compiled from index.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CMS内容管理系统</title>
+    <title><?php echo $this->_tpl_vars['webname']; ?>
+</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="../js/reg.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>

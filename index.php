@@ -18,7 +18,13 @@
 
 
 
+    $link = new FriendLinkController($smarty);
+    $link->index();
 
+    $tag = new TagController($smarty);
+    $tag->getFiveTag();
+
+    $smarty->assign('webname',WEBNAME);
 
 
     $smarty->assign('data',@$_COOKIE['user']);

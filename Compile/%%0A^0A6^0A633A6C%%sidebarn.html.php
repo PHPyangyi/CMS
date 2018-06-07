@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-07 06:44:52
+<?php /* Smarty version 2.6.31, created on 2018-06-07 10:49:09
          compiled from sidebarn.html */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,6 +17,7 @@
     <dd><a href="../admin/rotatain.php?action=show" target="main">首页轮播器</a></dd>
     <dd><a href="../admin/adver.php?action=show" target="main">广告服务</a></dd>
     <dd><a href="../admin/vote.php?action=show" target="main">调查投票管理</a></dd>
+    <dd><a href="../admin/link.php?action=show" target="main">审核友情链接</a></dd>
 </dl>
 
 </body>

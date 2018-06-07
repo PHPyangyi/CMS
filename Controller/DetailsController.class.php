@@ -70,6 +70,14 @@
 
                 $content = $this->model->getOneContent();
 
+                $tarArr = explode(',',$content->tag);
+
+                if (is_array($tarArr)) {
+                    foreach ($tarArr as $value) {
+                        $content->tag = str_replace($value,'<a href="search.php?type=3&inputkeyword='.$value.'">'.$value.'</a>',$content->tag);
+                    }
+                }
+
 
                 $this->smarty->assign('id',$content->id);
                 $this->smarty->assign('titlec',$content->title);

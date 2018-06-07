@@ -13,6 +13,15 @@
     $nav->showfront();   //display nav
 
 
+    $link = new FriendLinkController($smarty);
+    $link->index();
+
+    $tag = new TagController($smarty);
+    $tag->getFiveTag();
+
+    $smarty->assign('webname',WEBNAME);
+
+
     $list = new ListController($smarty);
     $list->Action();
 

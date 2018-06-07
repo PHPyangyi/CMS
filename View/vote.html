@@ -28,7 +28,7 @@
 
 {if $show}
 <table cellspacing="0">
-    <tr><th>编号</th><th>投票主题</th><th>投票项目</th><th>是否前台首选</th><th>操作</th></tr>
+    <tr><th>编号</th><th>投票主题</th><th>投票项目</th><th>是否前台首选</th><th>参与人数</th><th>操作</th></tr>
     {if $AllVote}
     {foreach from=$AllVote  key=key item=value}
     <tr>
@@ -36,6 +36,7 @@
         <td>{$value->title}</td>
         <td><a href="vote.php?action=showchild&id={$value->id}">查看</a> | <a href="vote.php?action=addchild&id={$value->id}">增加项目</a></td>
         <td>{$value->state}</td>
+        <td>{$value->pcount}</td>
         <td><a href="vote.php?action=update&id={$value->id}">修改</a> | <a href="vote.php?action=delete&id={$value->id}" onclick="return confirm('你真的要删除这个投票吗？') ? true : false">删除</a></td>
     </tr>
     {/foreach}
@@ -50,12 +51,13 @@
 
 {if $showchild}
 <table cellspacing="0">
-    <tr><th>编号</th><th>投票项目</th><th>操作</th></tr>
+    <tr><th>编号</th><th>投票项目</th><th>得票数</th><th>操作</th></tr>
     {if $AllChildVote}
     {foreach from=$AllChildVote  key=key  item=value}
     <tr>
         <td>{$key+$num+1}</td>
         <td>{$value->title}</td>
+        <td>{$value->count}</td>
         <td><a href="vote.php?action=update&id={$value->id}">修改</a> | <a href="vote.php?action=delete&id={$value->id}" onclick="return confirm('你真的要删除这个等级吗？') ? true : false">删除</a></td>
     </tr>
     {/foreach}

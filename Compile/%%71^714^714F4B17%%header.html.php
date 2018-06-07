@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-07 06:07:11
+<?php /* Smarty version 2.6.31, created on 2018-06-07 12:01:43
          compiled from header.html */ ?>
 
 <div id="top">
@@ -38,26 +38,25 @@
     </ul>
 </div>
 <div id="search">
-    <form>
-        <select name="search">
-            <option selected="selected">按标题</option>
-            <option>按关键字</option>
-            <option>全局查询</option>
+    <form method="get" action="search.php">
+        <select name="type">
+            <option selected="selected" value="1">按标题</option>
+            <option value="2">按关键字</option>
         </select>
-        <input type="text" name="keyword" class="text" />
-        <input type="submit" name="send" class="submit" value="搜索" />
+        <input type="text" name="inputkeyword" class="text" />
+        <input type="submit" class="submit" value="搜索" />
     </form>
     <strong>TAG标签：</strong>
     <ul>
-        <li><a href="###">基金(3)</a></li>
-        <li><a href="###">美女(1)</a></li>
-        <li><a href="###">白兰地(3)</a></li>
-        <li><a href="###">音乐(1)</a></li>
-        <li><a href="###">体育(1)</a></li>
-        <li><a href="###">直播(1)</a></li>
-        <li><a href="###">会晤(1)</a></li>
-        <li><a href="###">韩日(1)</a></li>
-        <li><a href="###">警方(1)</a></li>
-        <li><a href="###">广州(1)</a></li>
+        <?php if ($this->_tpl_vars['FiveTag']): ?>
+        <?php $_from = $this->_tpl_vars['FiveTag']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <li><a href="search.php?type=3&inputkeyword=<?php echo $this->_tpl_vars['value']->tagname; ?>
+"><?php echo $this->_tpl_vars['value']->tagname; ?>
+(<?php echo $this->_tpl_vars['value']->count; ?>
+)</a></li>
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
     </ul>
 </div>

@@ -7,6 +7,19 @@
      */
     require dirname(__FILE__).'/init.inc.php';
     global $smarty;
-    $_cast = new CastController($smarty);
-    $_cast->Action();
+
+    $nav=new NavController($smarty);
+    $nav->showfront();   //display nav
+
+    $link = new FriendLinkController($smarty);
+    $link->index();
+
+    $tag = new TagController($smarty);
+    $tag->getFiveTag();
+
+    $smarty->assign('webname',WEBNAME);
+
+
+    $cast = new CastController($smarty);
+    $cast->Action();
     $smarty->display('cast.html');

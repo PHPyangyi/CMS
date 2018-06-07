@@ -26,12 +26,35 @@
             return $this->$name;
         }
 
+        public function getVoteSum()
+        {
+            $_sql = "SELECT 
+											SUM(count) c
+								FROM 
+											cms_votee 
+							WHERE 
+											vid=(SELECT id FROM cms_votee WHERE state=1 LIMIT 1)";
+            return parent::one($_sql);
+        }
+
+        //累计投票
+        public function setCount()
+        {
+            $sql = "UPDATE 
+											cms_votee 
+								SET 
+											count=count+1 
+							WHERE 
+											id='$this->id'";
+            return parent::aud($sql);
+        }
 
         public function getVoteItem()
         {
             $sql = "SELECT 
 											id,
-											title 
+											title,
+											count 
 								FROM 
 											cms_votee 
 							WHERE 
@@ -145,15 +168,16 @@
         public function getAllVote()
         {
             $sql = "SELECT 
-											id,
-											title,
-											state
+											c.id,
+											c.title,
+											c.state,
+											(SELECT SUM(count) FROM cms_votee WHERE vid=c.id) pcount
 								FROM 
-											cms_votee
+											cms_votee c
 							WHERE
-											vid=0
+											c.vid=0
 							ORDER BY
-											date DESC
+											c.date DESC
 								$this->limit";
             return parent::all($sql);
         }
