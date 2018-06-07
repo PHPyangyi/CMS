@@ -17,7 +17,17 @@
             $this->lastUser();
             $this->showList();
             $this->getRotatain();
+            $this->getVote();
         }
+
+
+        private function getVote()
+        {
+            $vote = new VoteModel();
+            $this->smarty->assign('vote_title',$vote->getVoteTitle()->title);
+            $this->smarty->assign('vote_item',$vote->getVoteItem());
+        }
+
 
         //显示推荐，本月热点，本月评论，头条
         public function showList() {

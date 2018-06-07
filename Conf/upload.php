@@ -20,6 +20,19 @@
                 $height = 193;
                 $info = '轮播图上传成功！';
                 break;
+            case 'adver' :
+                switch ($_POST['size']) {
+                    case '690x80' :
+                        $width = 690;
+                        $height = 80;
+                        $info = '头部广告690x80上传成功！';
+                        break;
+                    case '270x200' :
+                        $width = 270;
+                        $height = 200;
+                        $info = '侧栏广告270x200上传成功！';
+                }
+                break;
             default:
                 Tool::alertBack('警告：非法操作！');
         }

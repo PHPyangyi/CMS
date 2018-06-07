@@ -1,5 +1,6 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 14:42:54
+<?php /* Smarty version 2.6.31, created on 2018-06-07 06:07:11
          compiled from header.html */ ?>
+
 <div id="top">
     <?php echo $this->_tpl_vars['title']; ?>
 
@@ -13,12 +14,14 @@
     <?php endif; ?>
 
 
-    <a href="###">这里可以放置文字广告1</a>
-    <a href="###">这里可以放置文字广告2</a>
+    <a href="###"><script type="text/javascript" src="js/text_adver.js"></script></a>
+    <a href="###"><script type="text/javascript" src="js/text_adver.js"></script></a>
 </div>
 <div id="header">
-    <h1><a href="###">瓢城Web俱乐部</a></h1>
-    <div class="adver"><a href="###"><img src="images/adver.png" alt="广告图" /></a></div>
+   <h1></h1>
+    <div class="adver"><script type="text/javascript" src="js/header_adver.js"></script></div>
+
+
 </div>
 <div id="nav">
     <ul>

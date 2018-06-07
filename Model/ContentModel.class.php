@@ -27,16 +27,16 @@
         private $id;
         private $limit;
 
-        //拦截器(__set)
-        public function __set($name, $value) {
-            $this->$name =  $value;
+        public function __set($name, $value)
+        {
+            // TODO: Implement __set() method.
+            $this->$name =Tool::htmlString( $value );
         }
-
-        //拦截器(__get)
-        public function __get($name) {
+        public function __get($name)
+        {
+            // TODO: Implement __get() method.
             return $this->$name;
         }
-
 
         //获取每个主栏目所有11条的最新文档
         public function getNewNavList()

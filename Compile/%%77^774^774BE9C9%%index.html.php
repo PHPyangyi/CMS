@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 15:57:37
+<?php /* Smarty version 2.6.31, created on 2018-06-07 07:23:23
          compiled from index.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -212,7 +212,7 @@ unset($_smarty_tpl_vars);
     </ul>
 </div>
 <div id="sidebar-right">
-    <div class="adver"><img src="images/adver2.png" alt="广告图" /></div>
+    <div class="adver"><script type="text/javascript" src="js/sidebar_adver.js"></script></div>
     <div class="hot">
         <h2>本月热点</h2>
         <ul>
@@ -245,13 +245,19 @@ unset($_smarty_tpl_vars);
     </div>
     <div class="vote">
         <h2>调查投票</h2>
-        <h3>请问您是怎么知道本站的：</h3>
-        <form>
-            <label><input type="radio" name="vote" checked="checked" /> 门户网站的搜索引擎</label>
-            <label><input type="radio" name="vote" /> Google或百度搜索</label>
-            <label><input type="radio" name="vote" /> 别的网站上的链接</label>
-            <label><input type="radio" name="vote" /> 朋友介绍或者电视广告</label>
-            <p><input type="submit" value="投票" name="send" /> <input type="button" value="查看" /></p>
+        <h3><?php echo $this->_tpl_vars['vote_title']; ?>
+</h3>
+        <form method="post" action="cast.php" target="_blank">
+            <?php if ($this->_tpl_vars['vote_item']): ?>
+            <?php $_from = $this->_tpl_vars['vote_item']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <label><input type="radio" name="vote" value="<?php echo $this->_tpl_vars['value']->id; ?>
+" /> <?php echo $this->_tpl_vars['value']->title; ?>
+</label>
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
+            <p><input type="submit" value="投票" name="send" /> <input type="button" onclick="javascript:window.open('cast.php')" value="查看" /></p>
         </form>
     </div>
 </div>

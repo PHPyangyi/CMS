@@ -27,3 +27,6 @@
     define('ARTICLE_SIZE',8);												//文档每页多少条
 
     define('RO_NUM',4);                                                     //轮播图个数
+    //广告服务
+    define('ADVER_TEXT_NUM',5);											//最多5条文字广告循环
+    define('ADVER_PIC_NUM',3);												//最多3条图片广告循环
