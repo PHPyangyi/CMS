@@ -40,10 +40,15 @@
                 $this->model->last_ip = $_SERVER["REMOTE_ADDR"];
                 $login = $this->model->getLoginManage();
                 if ($login) {
-                    $_SESSION['admin']['admin_user'] = $login->admin_user;
-                    $_SESSION['admin']['level_name'] = $login->level_name;
-                    $this->model->setLoginCount ();
-                    Tool::alertLocation(null, 'admin.php');
+                    if (strstr($login->premission,'1')) {
+                        $_SESSION['admin']['admin_user'] = $login->admin_user;
+                        $_SESSION['admin']['level_name'] = $login->level_name;
+                        $_SESSION['admin']['premission'] = $login->premission;
+                        $this->model->setLoginCount();
+                        Tool::alertLocation(null, 'admin.php');
+                    } else {
+                        Tool::alertBack('警告：权限不够，您无法登录！');
+                    }
                 } else {
                     Tool::alertBack('警告：用户名或密码错误！');
                 }

@@ -59,5 +59,12 @@
             return false;
         }
 
+        static public function checkPremission($date,$info)
+        {
+            if (!strstr($_SESSION['admin']['premission'],$date)) {
+                Tool::alertBack($info);
+            }
+        }
+
 
     }

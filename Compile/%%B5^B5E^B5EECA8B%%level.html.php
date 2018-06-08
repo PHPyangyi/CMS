@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 14:27:13
+<?php /* Smarty version 2.6.31, created on 2018-06-08 04:04:21
          compiled from level.html */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
 
 <?php if ($this->_tpl_vars['show']): ?>
 <table cellspacing="0">
-    <tr><th>序号</th><th>等级名称</th><th>描述</th><th>操作</th></tr>
+    <tr><th>编号</th><th>等级名称</th><th>描述</th><th>权限标识</th><th>操作</th></tr>
     <?php $_from = $this->_tpl_vars['AllLevel']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
 ?>
@@ -35,6 +35,8 @@
         <td><?php echo $this->_tpl_vars['value']->level_name; ?>
 </td>
         <td><?php echo $this->_tpl_vars['value']->level_info; ?>
+</td>
+        <td><?php echo $this->_tpl_vars['value']->premission; ?>
 </td>
         <td><a href="level.php?action=update&id=<?php echo $this->_tpl_vars['value']->id; ?>
 ">修改</a> | <a href="level.php?action=delete&id=<?php echo $this->_tpl_vars['value']->id; ?>
@@ -53,6 +55,17 @@
     <table cellspacing="0" class="left">
         <tr><td>等级名称：<input type="text" name="level_name" class="text" />(* 等级名称不得小于两位，不得大于20位！)</td></tr>
         <tr><td><textarea name="level_info"></textarea>(* 描述不得大于200位！)</td></tr>
+        <tr><td style="padding-left:60px;padding-right:40%;">
+            <?php if ($this->_tpl_vars['AllPremission']): ?>
+            <?php $_from = $this->_tpl_vars['AllPremission']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+            <input type="checkbox" value="<?php echo $this->_tpl_vars['value']->id; ?>
+" name="premission[]" /> <?php echo $this->_tpl_vars['value']->name; ?>
+
+            <?php endforeach; endif; unset($_from); ?>
+            <?php endif; ?>
+        </td></tr>
         <tr><td><input type="submit" name="send" value="新增等级" class="submit level" onclick="return checkForm();" /> [ <a href="<?php echo $this->_tpl_vars['prev_url']; ?>
 ">返回列表</a> ]</td></tr>
     </table>
@@ -68,6 +81,17 @@
 " class="text" />(* 等级名称不得小于两位，不得大于20位！)</td></tr>
         <tr><td><textarea name="level_info"><?php echo $this->_tpl_vars['level_info']; ?>
 </textarea>(* 描述不得大于200位！)</td></tr>
+        <tr><td style="padding-left:60px;padding-right:40%;">
+        <?php if ($this->_tpl_vars['AllPremission']): ?>
+        <?php $_from = $this->_tpl_vars['AllPremission']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['value']):
+?>
+        <input type="checkbox" value="<?php echo $this->_tpl_vars['value']->id; ?>
+" name="premission[]" /> <?php echo $this->_tpl_vars['value']->name; ?>
+
+        <?php endforeach; endif; unset($_from); ?>
+        <?php endif; ?>
+        </td></tr>
         <tr><td><input type="submit" name="send" value="修改等级" class="submit level" onclick="return checkForm();" /> [<a href="<?php echo $this->_tpl_vars['prev_url']; ?>
 ">返回列表</a> ]</td></tr>
     </table>

@@ -49,7 +49,8 @@
         {
             $_sql = "SELECT 
 										m.admin_user,
-										l.level_name 
+										l.level_name,
+										l.premission 
 								FROM 
 										cms_manage m,
 										cms_level l

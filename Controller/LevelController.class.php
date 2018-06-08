@@ -62,11 +62,15 @@
                 if ($this->model->getOneLevel()) Tool::alertBack('警告：此等级名称已有！');
 
                 $this->model->level_info = $_POST['level_info'];
+                $this->model->premission = implode(',',$_POST['premission']);
                 $this->model->addLevel() ? Tool::alertLocation('恭喜你，新增等级成功！','level.php?action=show') : Tool::alertBack('很遗憾，新增等级失败！');
             }
             $this->smarty->assign('add',true);
             $this->smarty->assign('title','新增管理员');
             $this->smarty->assign('prev_url',PREV_URL);
+
+            $premission = new PremissionModel();
+            $this->smarty->assign('AllPremission',$premission->getAllPremission());
         }
 
         private function update ()
@@ -79,14 +83,22 @@
                 if (Validate::checkLength($_POST['level_info'],200,'max')) Tool::alertBack('警告：等级描述不得大于200位！');
                 $this->model->id = $_POST['id'];
                 $this->model->level_name = $_POST['level_name'];
-
-             //   if ($this->model->getOneLevel()) Tool::alertBack('警告：此等级名称已有！');
-
                 $this->model->level_info = $_POST['level_info'];
+             //   if ($this->model->getOneLevel()) Tool::alertBack('警告：此等级名称已有！');
+                $this->model->premission = implode(',',$_POST['premission']);
+
+                print_r($this->model->premission);
+
+
+
                 $this->model->updateLevel() ? Tool::alertLocation('恭喜你，修改等级成功！', 'level.php?action=show') : Tool::alertBack('很遗憾，修改等级失败！');
             }
 
             if (isset($_GET['id'])) {
+
+                $_premission = new PremissionModel();
+                $this->smarty->assign('AllPremission',$_premission->getAllPremission());
+
                 $this->model->id = $_GET['id'];
                 is_object($this->model->getOneLevel()) ? true : Tool::alertBack('等级传值的id有误！');
                 $level=$this->model->getOneLevel();

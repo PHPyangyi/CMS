@@ -11,6 +11,7 @@
         private $level_name;
         private $level_info;
         private $limit;
+        private $premission;
 
         public function __set($name, $value)
         {
@@ -55,7 +56,9 @@
         {
             $sql = "SELECT 
 										id,
-										level_name
+										level_name,
+										level_info,
+										premission 
 								FROM 
 										cms_level 
 								ORDER BY 
@@ -85,11 +88,13 @@
             $sql = "INSERT INTO 
 												cms_level (
 																				level_name,
-																				level_info
+																				level_info,
+																				premission
 																		) 
 														VALUES (
 																				'$this->level_name',
-																				'$this->level_info'
+																				'$this->level_info',
+																				'$this->premission'
 																		)";
             return parent::aud($sql);
         }
@@ -102,7 +107,8 @@
 										cms_level 
 								  SET 
 										level_name='$this->level_name',
-										level_info='$this->level_info' 
+										level_info='$this->level_info', 
+										premission='$this->premission'
 							WHERE 
 										id='$this->id' 
 								 LIMIT 

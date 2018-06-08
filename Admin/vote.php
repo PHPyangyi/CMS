@@ -9,7 +9,7 @@
     require substr(dirname(__FILE__),0,-6).'/init.inc.php';
 
     Validate::checkSession();
-
+    Validate::checkPremission('11','警告，权限不足，您不能管理投票！');
     global $smarty;
 
     $nav=new VoteController($smarty);   //入口

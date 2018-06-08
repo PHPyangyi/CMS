@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-06-06 14:27:11
+<?php /* Smarty version 2.6.31, created on 2018-06-08 03:38:33
          compiled from sidebar.html */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,6 +14,7 @@
     <dd><a href="main.php" target="main">后台首页</a></dd>
     <dd><a href="manage.php?action=show" target="main">管理员管理</a></dd>
     <dd><a href="level.php?action=show" target="main">等级管理</a></dd>
+    <dd><a href="../admin/premission.php?action=show" target="main">权限设定</a></dd>
 </dl>
 
 </body>
